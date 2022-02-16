@@ -43,16 +43,18 @@ void parserRequest::parseHost() {
   if (hostLine_begin == string::npos) {
     throw MyException("Host not found in request\n");
   }
-  size_t hostLine_end = request.find("\r\n",hostLine_begin);
-  string hostLine = request.substr(hostLine_begin+6, hostLine_end-(hostLine_begin+6));
+  size_t hostLine_end = request.find("\r\n", hostLine_begin);
+  string hostLine =
+      request.substr(hostLine_begin + 6, hostLine_end - (hostLine_begin + 6));
 
   // extract port and host from host line.
-  size_t delimiter = hostLine.find(":");  //假设即使没有端口号，':'也存在
-  // if (delimiter == string::npos) {
-  //   throw MyException("delimeter in host does not exist\n");
-  // }
-
-  this->host = hostLine.substr(0, delimiter);
-  this->port =
-      hostLine.substr(delimiter + 1).empty() ? "80" : hostLine.substr(delimiter + 1);
+  size_t delimiter = hostLine.find(":");  //没有端口号，':'也不存在
+  if (delimiter == string::npos) {
+    this->host = hostLine;
+    this->port = "80";
+  }
+  else {
+    this->host = hostLine.substr(0, delimiter);
+    this->port = hostLine.substr(delimiter + 1);
+  }
 }

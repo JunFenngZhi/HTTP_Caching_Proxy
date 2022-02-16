@@ -34,11 +34,11 @@ class parserRequest {
   void checkRequestFormat();
 
   inline void printResult() {
-    cout << "p.request:  " << request << endl;
-    cout << "p.requestline: " << requestline << endl;
-    cout << "p.host:   " << host << endl;
-    cout << "p.method:  " << method << endl;
-    cout << "p.port:   " << port << endl;
+    cout << "p.request:" << request << endl;
+    cout << "p.requestline:" << requestline << endl;
+    cout << "p.host:" << host << endl;
+    cout << "p.method:" << method << endl;
+    cout << "p.port:" << port << endl;
     cout << "----------------------------------------------------------" << endl;
   }
 };

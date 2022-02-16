@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -22,6 +23,7 @@ class proxy {
 
  private:
  static void* handleRequest(void* info);
+ static void handle_CONNECT(int client_fd, int server_fd);
 
 };
 
