@@ -17,7 +17,7 @@ void parserRequest::checkRequestFormat() {
 void parserRequest::parseRequestLine() {
   size_t requestline_end = request.find_first_of("\r\n");
   if (requestline_end == string::npos) {
-    throw MyException("Wrong request format.\n");
+    throw MyException("Wrong request format. No /r/n, Can not find request line. \n");
   }
 
   this->requestline = request.substr(0, requestline_end);
@@ -30,7 +30,7 @@ void parserRequest::parseMethod() {
   size_t method_end = requestline.find_first_of(" ");
   this->method = requestline.substr(0, method_end);
   if (this->method != "GET" && this->method != "POST" && this->method != "CONNECT") {
-    throw MyException("Wrong request method.\n");
+    throw MyException("Request method does not exist.\n");
   }
 }
 
