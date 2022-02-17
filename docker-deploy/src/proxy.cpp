@@ -1,10 +1,10 @@
 #include "proxy.h"
-#include "clientInfo.h"
+
+#include "assert.h"
+#include "exception.h"
 #include "function.h"
 #include "logger.h"
 #include "parserRequest.h"
-#include "exception.h"
-#include "assert.h"
 #include "parserResponse.h"
 
 using namespace std;
@@ -12,7 +12,6 @@ using namespace std;
 #define MAX_LENGTH 65536
 
 ofstream logfile("proxy.log");
-
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 /*
@@ -39,11 +38,12 @@ void proxy::run() {
       client_fd = serverAcceptConnection(server_fd, clientIp);
     }
     catch (const std::exception & e) {
-      std::cerr << e.what() << '\n';
+      std::cerr <<client_fd<<":"<<e.what() << '\n';
       continue;
     }
 
-    clientInfo * info = new clientInfo(clientId, clientIp, client_fd);  //这里需要加锁吗？ 主线程delete会让其他线程崩溃
+    clientInfo * info = new clientInfo(
+        clientId, clientIp, client_fd);  //这里需要加锁吗？ 主线程delete会让其他线程崩溃
     pthread_t thread;
     pthread_create(&thread, NULL, handleRequest, info);
     clientId++;
@@ -57,28 +57,28 @@ void * proxy::handleRequest(void * info) {
   clientInfo * client_info = (clientInfo *)info;
 
   // receive first request from client
-  vector<char> messageContainer(MAX_LENGTH, 0);
+  vector<char> buffer(MAX_LENGTH, 0);
   int len = recv(client_info->client_fd,
-                 &(messageContainer.data()[0]),
+                 &(buffer.data()[0]),
                  MAX_LENGTH,
                  0);  // len 是recv实际的读取字节数
   if (len <= 0) {
     logger::InvalidRequest(to_string(client_info->Id));
-    close(client_info->client_fd);
+    resourceClean(-1,client_info);
     return nullptr;
   }
-  
-  //clean messageContainer and then parse the request,check its format
+
+  //parse the request,check its format
   //这里用string来接受client发起的第一个请求。因为client请求不会太长，所以string能装下。
-  string request = messageContainer.data();  
-  assert(len == request.length());
+  string request(buffer.data(),len);
   parserRequest p;
   try {
     p.parse(request);
-  }catch (const std::exception & e) {
-    std::cerr << e.what() << '\n';
+  }
+  catch (const std::exception & e) {
+    std::cerr <<client_info->Id <<":" << e.what() << '\n';
     logger::PrintException(client_info->Id, e.what());
-    close(client_info->client_fd);
+    resourceClean(-1,client_info);
     return nullptr;
   }
 
@@ -91,44 +91,43 @@ void * proxy::handleRequest(void * info) {
     server_fd = clientRequestConnection(p.host, p.port);
   }
   catch (const std::exception & e) {
-    std::cerr << e.what() << '\n';
-    close(client_info->client_fd);
+    std::cerr <<client_info->Id <<":" << e.what() << '\n';
+    resourceClean(-1,client_info);
     return nullptr;
   }
 
-  // handle specific method  
+  // handle specific method
   if (p.method == "CONNECT") {
     logger::displayRequest(client_info, p.requestline, p.host);
     try {
-      handle_CONNECT(client_info->client_fd,server_fd);
+      handle_CONNECT(client_info->client_fd, server_fd);
     }
     catch (const std::exception & e) {
-      std::cerr << e.what() << '\n';
+      std::cerr <<client_info->Id <<":" << e.what() << '\n';
+      logger::PrintException(client_info->Id, e.what());
+      resourceClean(server_fd, client_info);
       return nullptr;
     }
     logger::printTunnelClosed(client_info);
   }
   else if (p.method == "GET") {
     logger::displayRequest(client_info, p.requestline, p.host);
-    try{
+    try {
       handle_GET(client_info, server_fd, request);
-    }catch(const std::exception& e){
-      std::cerr << e.what() << '\n';
-      logger::PrintException(client_info->Id, e.what());
     }
-    
-    
-    
+    catch (const std::exception & e) {
+      std::cerr <<client_info->Id <<":" << e.what() << '\n';
+      logger::PrintException(client_info->Id, e.what());
+      resourceClean(server_fd,client_info);
+      return nullptr;
+    }
   }
   else if (p.method == "POST") {
     logger::displayRequest(client_info, p.requestline, p.host);
   }
-  
-  close(server_fd);
-  close(client_info->client_fd);
 
-  delete info;
-  
+  resourceClean(server_fd,client_info);
+
   return nullptr;
 }
 
@@ -175,43 +174,77 @@ void proxy::handle_CONNECT(int client_fd, int server_fd) {
 /*
   handle GET for client.
 */
-void proxy::handle_GET(clientInfo* client_info, int server_fd, const string& request) {
+void proxy::handle_GET(clientInfo * client_info, int server_fd, const string & request) {
   // send client request diretly to server
-  if(send(server_fd, request.c_str(), request.length(), 0) <= 0){
+  if (send(server_fd, request.c_str(), request.length(), 0) <= 0) {
     throw MyException("Fail to send GET request to server.\n");
   }
 
   // receive first response from server
   vector<char> buffer(MAX_LENGTH, 0);
-  int len = recv(server_fd,&(buffer.data()[0]),MAX_LENGTH,0);
-  if(len <= 0){
+  int len = recv(server_fd, &(buffer.data()[0]), MAX_LENGTH, 0);
+  if (len <= 0) {
     throw MyException("Fail to receive response from server.\n");
   }
 
   // parse response
-  string firstResponse(buffer.data());
+  string firstResponse(buffer.data(), len);
   parserResponse p;
   p.parse(firstResponse);
 
-  // logging 待补充
-  if(p.chunked == true){  
-    // chunked mode. proxy recv packets from server and then directly forward to the client
-    send(server_fd, firstResponse.c_str(),firstResponse.length(),0);  // send the first packet
-    while (1){
-      int len = recv(server_fd,&(buffer.data()[0]),MAX_LENGTH,0);
-      if(len <= 0)  //already send all chunks
+  // chunked mode. proxy recv packets from server and then directly forward to the client
+  if (p.chunked == true) {
+    send(client_info->client_fd,
+         firstResponse.c_str(),
+         firstResponse.length(),
+         0);  // send the first packet
+    while (1) {
+      int len = recv(server_fd, &(buffer.data()[0]), MAX_LENGTH, 0);
+      if (len <= 0)  //already send all chunks
         break;
-      send(client_info->client_fd,&(buffer.data()[0]), len, 0);  
+      send(client_info->client_fd, &(buffer.data()[0]), len, 0);
     }
-    cout<<"finish send all the chunks.\n"; 
+    cout <<client_info->Id<<":finish send all the chunks.\n";
   }
-  else{  // not chunked
+  else {  // not chunked
     //get the whole message and then send it to the client
     int contentLength = stoi(p.content_length);
     int headerSize = p.head_length;
-    string wholeMessage = getWholeMessage(len,contentLength,headerSize,server_fd,firstResponse);
+    string wholeMessage;
+    getWholeMessage(
+        len, contentLength, headerSize, server_fd, firstResponse, wholeMessage);
     send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0);
   }
+}
 
+/*
+  get thw whole response message from sever. Keep receiving until messageLen > remainLen.
+  save the whole message in string & wholeMessage.
+*/
+void proxy::getWholeMessage(int firstMessageLen,int contentLength,int headerSize,int serverId,const string & firstResponse,string & wholeMessage){
+  wholeMessage = firstResponse;
+  int remainReceiveLen = contentLength -(firstMessageLen-headerSize);  //firstMessage smaller than header is very rare.
+  int receiveLen = 0; //record receive message len;
+  vector<char> buffer(MAX_LENGTH, 0);
 
+  while(receiveLen < remainReceiveLen){
+    int len = recv(serverId,&(buffer.data()[0]), MAX_LENGTH, 0);
+    if(len <= 0)
+      break;
+    string temp(buffer.data(),len);  //can not use the whole buffer as a string.
+    wholeMessage += temp;
+    receiveLen += len;
+  }
+  return;
+}
+
+/*
+  clean resource. close sockets and delete clientInfo.
+*/
+void proxy::resourceClean(int server_fd, clientInfo* info){
+  if(server_fd != -1)
+    close(server_fd);
+  
+  close(info->client_fd);
+  delete(info);
 }

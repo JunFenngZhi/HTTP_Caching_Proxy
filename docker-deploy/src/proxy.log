@@ -1,282 +1,533 @@
-0: "CONNECT www.facebook.com:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:56 2022
-0: Requesting "CONNECT www.facebook.com:443 HTTP/1.1" from www.facebook.com
-1: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-1: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-2: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-2: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-3: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-3: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-4: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-4: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-5: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-5: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-6: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-6: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-7: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-7: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-8: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-8: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-9: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-9: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-10: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-10: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-11: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:57 2022
-11: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-12: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-13: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-14: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-12: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-13: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
-14: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-15: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-15: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-17: "POST http://r3.o.lencr.org/ HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-16: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-18: "POST http://ocsp.digicert.com/ HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-16: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+1: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:29 2022
+0: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:29 2022
+2: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:29 2022
+3: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+4: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+1: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+0: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+3: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+5: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+2: Requesting "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from firefox.settings.services.mozilla.com
+4: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+5: Requesting "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from firefox.settings.services.mozilla.com
+8: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+6: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+7: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+9: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+6: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
+7: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+9: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+8: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+4: Tunnel closed
+10: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+11: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+10: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+11: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+12: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:30 2022
+14: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:31 2022
+13: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:31 2022
+15: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:31 2022
+12: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+15: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+13: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+14: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+16: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:31 2022
+17: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:31 2022
+16: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
 17: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
-18: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
-19: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-19: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-20: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-20: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-21: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-21: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-22: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-22: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-23: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-23: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-24: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-24: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-25: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-25: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-26: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-26: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-27: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:58 2022
-27: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-28: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-28: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-29: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-29: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-30: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-30: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-31: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-31: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-32: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-32: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-33: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-33: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-34: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-34: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-35: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-35: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-36: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-36: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-37: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-37: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-38: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:32:59 2022
-38: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-39: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-39: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-40: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-40: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-41: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-41: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-42: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-42: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-43: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-43: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-44: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-44: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-45: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-45: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-46: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-46: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-47: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-47: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-48: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-48: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-49: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-49: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-50: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:00 2022
-50: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-51: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-51: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-52: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-52: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-53: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-53: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-54: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-54: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-55: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-55: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-56: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-56: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-57: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-57: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-58: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-58: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-59: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-59: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-60: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-60: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-61: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-61: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-62: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:01 2022
-62: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-63: "CONNECT www.wikipedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:02 2022
-64: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:02 2022
-64: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-63: Requesting "CONNECT www.wikipedia.org:443 HTTP/1.1" from www.wikipedia.org
-65: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:02 2022
-65: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-66: "CONNECT fr.wikipedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:03 2022
-66: Requesting "CONNECT fr.wikipedia.org:443 HTTP/1.1" from fr.wikipedia.org
-67: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-69: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-68: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-70: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-71: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-72: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-71: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
-67: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
-69: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
-68: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
-70: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
-72: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
-68: Tunnel closed
-72: Tunnel closed
-71: Tunnel closed
-67: Tunnel closed
-70: Tunnel closed
-73: "CONNECT login.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:04 2022
-73: Requesting "CONNECT login.wikimedia.org:443 HTTP/1.1" from login.wikimedia.org
-74: "CONNECT commons.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:07 2022
-74: Requesting "CONNECT commons.wikimedia.org:443 HTTP/1.1" from commons.wikimedia.org
-75: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:08 2022
-75: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
-76: "CONNECT meta.wikimedia.org:443 HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:08 2022
-75: Tunnel closed
-76: Requesting "CONNECT meta.wikimedia.org:443 HTTP/1.1" from meta.wikimedia.org
-77: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-77: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-78: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-78: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-79: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-79: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-80: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-80: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-81: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-81: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-82: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-82: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-83: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-83: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-84: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-84: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-85: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Wed Feb 16 18:33:58 2022
-85: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-74: Tunnel closed
-69: Tunnel closed
-76: Tunnel closed
-66: Tunnel closed
-0: Tunnel closed
-73: Tunnel closed
-63: Tunnel closed
+10: Tunnel closed
+12: Tunnel closed
 13: Tunnel closed
-14: Tunnel closed
-87: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:08 2022
-86: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:08 2022
-87: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-86: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
-88: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-88: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-89: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-90: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-91: "POST http://r3.o.lencr.org/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-90: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-89: Requesting "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from firefox.settings.services.mozilla.com
-91: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
-92: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-92: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
-93: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-93: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-94: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-94: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-95: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-96: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-97: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-95: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
-97: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-96: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-98: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-99: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-100: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-101: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-102: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-98: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-99: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-102: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
-101: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
-100: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-103: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-103: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-92: Tunnel closed
-104: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-104: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-106: "POST http://r3.o.lencr.org/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-105: "POST http://ocsp.digicert.com/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-108: "POST http://r3.o.lencr.org/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-109: "POST http://ocsp.digicert.com/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-106: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
-107: "POST http://ocsp.digicert.com/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-108: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
-110: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-109: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
-105: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
-107: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
-110: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-111: "POST http://ocsp.digicert.com/ HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-111: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
-102: Tunnel closed
-112: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-112: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-113: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-113: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-96: Tunnel closed
-114: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-98: Tunnel closed
-114: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-115: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:09 2022
-115: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-116: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-116: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-117: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-117: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-118: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-118: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-119: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-119: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-120: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-120: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-121: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-121: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-122: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-122: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-123: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-123: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-124: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-124: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-125: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-125: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-126: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:10 2022
-126: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-127: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:11 2022
-127: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-128: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.24.61.124 @ Thu Feb 17 -03:21:11 2022
-128: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-99: Tunnel closed
-101: Tunnel closed
-100: Tunnel closed
-86: Tunnel closed
+15: Tunnel closed
+18: "CONNECT www.youtube.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:32 2022
+18: Requesting "CONNECT www.youtube.com:443 HTTP/1.1" from www.youtube.com
+19: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:32 2022
+19: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+21: "CONNECT fonts.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:32 2022
+21: Requesting "CONNECT fonts.googleapis.com:443 HTTP/1.1" from fonts.googleapis.com
+22: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:32 2022
+22: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+20: "CONNECT i.ytimg.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:32 2022
+20: Requesting "CONNECT i.ytimg.com:443 HTTP/1.1" from i.ytimg.com
+23: "CONNECT accounts.google.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:33 2022
+23: Requesting "CONNECT accounts.google.com:443 HTTP/1.1" from accounts.google.com
+24: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:33 2022
+24: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+25: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:33 2022
+25: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+26: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:34 2022
+26: Requesting "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from googleads.g.doubleclick.net
+27: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:34 2022
+27: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+28: "CONNECT www.gstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:34 2022
+29: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:34 2022
+28: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
+29: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+30: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:34 2022
+34: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+30: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+35: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+33: "CONNECT www.gstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+31: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+32: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+37: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+36: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+33: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
+31: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+32: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+36: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+34: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+35: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+37: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+38: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+38: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+40: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+39: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+40: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+42: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+41: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+43: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+39: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+41: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+43: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+42: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+36: Tunnel closed
+35: Tunnel closed
+37: Tunnel closed
+33: Tunnel closed
+34: Tunnel closed
+32: Tunnel closed
+44: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:35 2022
+44: Requesting "CONNECT static.doubleclick.net:443 HTTP/1.1" from static.doubleclick.net
+45: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:36 2022
+45: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+46: "CONNECT www.reddit.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:39 2022
+46: Requesting "CONNECT www.reddit.com:443 HTTP/1.1" from www.reddit.com
+47: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:39 2022
+48: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:40 2022
+51: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:40 2022
+50: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:40 2022
+49: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:40 2022
+48: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+52: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:40 2022
+47: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+49: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+51: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+50: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+52: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+47: Tunnel closed
+49: Tunnel closed
+50: Tunnel closed
+52: Tunnel closed
+51: Tunnel closed
+55: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:40 2022
+65: "CONNECT emoji.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+53: "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+63: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+59: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+54: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+64: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+60: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+56: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+62: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+61: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+58: "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+57: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+66: "CONNECT external-preview.redd.it:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:41 2022
+64: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+54: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+55: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+59: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+65: Requesting "CONNECT emoji.redditmedia.com:443 HTTP/1.1" from emoji.redditmedia.com
+63: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+56: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+60: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+57: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+62: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+58: Requesting "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from b.thumbs.redditmedia.com
+53: Requesting "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from b.thumbs.redditmedia.com
+61: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+66: Requesting "CONNECT external-preview.redd.it:443 HTTP/1.1" from external-preview.redd.it
+56: Tunnel closed
+57: Tunnel closed
+59: Tunnel closed
+62: Tunnel closed
+64: Tunnel closed
+60: Tunnel closed
+61: Tunnel closed
+58: Tunnel closed
+63: Tunnel closed
+67: "CONNECT gql.reddit.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:42 2022
+68: "CONNECT gql.reddit.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:42 2022
+68: Requesting "CONNECT gql.reddit.com:443 HTTP/1.1" from gql.reddit.com
+67: Requesting "CONNECT gql.reddit.com:443 HTTP/1.1" from gql.reddit.com
+69: "CONNECT www.redditmedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:42 2022
+69: Requesting "CONNECT www.redditmedia.com:443 HTTP/1.1" from www.redditmedia.com
+67: Tunnel closed
+70: "CONNECT www.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:46 2022
+70: Requesting "CONNECT www.amazon.com:443 HTTP/1.1" from www.amazon.com
+71: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+71: Requesting "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from images-na.ssl-images-amazon.com
+74: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+74: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+74: Tunnel closed
+72: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+76: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+77: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+75: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+78: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+79: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+77: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+75: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+76: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+78: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+79: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+72: Requesting "CONNECT fls-na.amazon.com:443 HTTP/1.1" from fls-na.amazon.com
+80: "CONNECT assoc-na.associates-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+81: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+81: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+80: Requesting "CONNECT assoc-na.associates-amazon.com:443 HTTP/1.1" from assoc-na.associates-amazon.com
+75: Tunnel closed
+82: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+79: Tunnel closed
+83: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+82: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+78: Tunnel closed
+83: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+85: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+84: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+81: Tunnel closed
+77: Tunnel closed
+84: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+85: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+86: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:47 2022
+86: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+87: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+88: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+88: Requesting "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from aax-us-east-retail-direct.amazon.com
+87: Requesting "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from aax-us-east-retail-direct.amazon.com
+89: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+92: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+90: "CONNECT completion.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+91: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+93: "CONNECT d23tl967axkois.cloudfront.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+89: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+94: "CONNECT d2in0p32vp1pij.cloudfront.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+96: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+98: "CONNECT player.stats.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+99: "CONNECT 4b64d6fa612f.us-east-1.playback.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+100: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:48 2022
+91: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+93: Requesting "CONNECT d23tl967axkois.cloudfront.net:443 HTTP/1.1" from d23tl967axkois.cloudfront.net
+92: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+90: Requesting "CONNECT completion.amazon.com:443 HTTP/1.1" from completion.amazon.com
+96: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+99: Requesting "CONNECT 4b64d6fa612f.us-east-1.playback.live-video.net:443 HTTP/1.1" from 4b64d6fa612f.us-east-1.playback.live-video.net
+100: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+94: Requesting "CONNECT d2in0p32vp1pij.cloudfront.net:443 HTTP/1.1" from d2in0p32vp1pij.cloudfront.net
+98: Requesting "CONNECT player.stats.live-video.net:443 HTTP/1.1" from player.stats.live-video.net
 89: Tunnel closed
+101: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+101: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+102: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+102: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+103: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+104: "CONNECT video-weaver.jfk04.hls.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+105: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+103: Requesting "CONNECT unagi.amazon.com:443 HTTP/1.1" from unagi.amazon.com
+104: Requesting "CONNECT video-weaver.jfk04.hls.live-video.net:443 HTTP/1.1" from video-weaver.jfk04.hls.live-video.net
+105: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+106: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+107: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:49 2022
+107: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+106: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+108: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+109: "CONNECT ads.samba.tv:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+110: "CONNECT usersync.samplicio.us:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+111: "CONNECT lciapi.ninthdecimal.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+112: "CONNECT mwzeom.zeotap.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+109: Requesting "CONNECT ads.samba.tv:443 HTTP/1.1" from ads.samba.tv
+108: Requesting "CONNECT t.myvisualiq.net:443 HTTP/1.1" from t.myvisualiq.net
+110: Requesting "CONNECT usersync.samplicio.us:443 HTTP/1.1" from usersync.samplicio.us
+111: Requesting "CONNECT lciapi.ninthdecimal.com:443 HTTP/1.1" from lciapi.ninthdecimal.com
+113: "CONNECT www.imdb.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+114: "CONNECT pi.ispot.tv:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+112: Requesting "CONNECT mwzeom.zeotap.com:443 HTTP/1.1" from mwzeom.zeotap.com
+113: Requesting "CONNECT www.imdb.com:443 HTTP/1.1" from www.imdb.com
+114: Requesting "CONNECT pi.ispot.tv:443 HTTP/1.1" from pi.ispot.tv
+115: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+115: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+116: "POST http://ocsp.godaddy.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+116: Requesting "POST http://ocsp.godaddy.com/ HTTP/1.1" from ocsp.godaddy.com
+120: "POST http://ocsp.godaddy.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+117: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+119: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:50 2022
+117: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+120: Requesting "POST http://ocsp.godaddy.com/ HTTP/1.1" from ocsp.godaddy.com
+119: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+121: "CONNECT dsum-sec.casalemedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+123: "CONNECT ups.analytics.yahoo.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+122: "CONNECT x.bidswitch.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+124: "CONNECT pixel.advertising.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+125: "CONNECT aa.agkn.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+126: "CONNECT tags.bluekai.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+121: Requesting "CONNECT dsum-sec.casalemedia.com:443 HTTP/1.1" from dsum-sec.casalemedia.com
+127: "CONNECT c1.adform.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+122: Requesting "CONNECT x.bidswitch.net:443 HTTP/1.1" from x.bidswitch.net
+125: Requesting "CONNECT aa.agkn.com:443 HTTP/1.1" from aa.agkn.com
+136: "CONNECT ads.stickyadstv.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+130: "CONNECT analytics.twitter.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+128: "CONNECT px.surveywall-api.survata.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:51 2022
+123: Requesting "CONNECT ups.analytics.yahoo.com:443 HTTP/1.1" from ups.analytics.yahoo.com
+144: "CONNECT uipglob.semasio.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+149: "CONNECT loadus.exelator.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+126: Requesting "CONNECT tags.bluekai.com:443 HTTP/1.1" from tags.bluekai.com
+133: "CONNECT cms.analytics.yahoo.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+135: "CONNECT odr.mookie1.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+134: "CONNECT pixel.rubiconproject.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+145: "CONNECT ib.adnxs.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+124: Requesting "CONNECT pixel.advertising.com:443 HTTP/1.1" from pixel.advertising.com
+132: "CONNECT dpm.demdex.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+150: "CONNECT www.facebook.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+141: "CONNECT sb.scorecardresearch.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+142: "CONNECT us-u.openx.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+140: "CONNECT usermatch.krxd.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+143: "CONNECT ssum-sec.casalemedia.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+137: "CONNECT beacon.krxd.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+146: "CONNECT image2.pubmatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+129: "CONNECT sync.search.spotxchange.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+147: "CONNECT token.rubiconproject.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+148: "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+131: "CONNECT amazon.partners.tremorhub.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+139: "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+151: "CONNECT image6.pubmatic.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+138: "CONNECT bs.serving-sys.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+127: Requesting "CONNECT c1.adform.net:443 HTTP/1.1" from c1.adform.net
+152: "CONNECT sync.taboola.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+132: Requesting "CONNECT dpm.demdex.net:443 HTTP/1.1" from dpm.demdex.net
+135: Requesting "CONNECT odr.mookie1.com:443 HTTP/1.1" from odr.mookie1.com
+139: Requesting "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from cm.g.doubleclick.net
+142: Requesting "CONNECT us-u.openx.net:443 HTTP/1.1" from us-u.openx.net
+148: Requesting "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from cm.g.doubleclick.net
+129: Requesting "CONNECT sync.search.spotxchange.com:443 HTTP/1.1" from sync.search.spotxchange.com
+141: Requesting "CONNECT sb.scorecardresearch.com:443 HTTP/1.1" from sb.scorecardresearch.com
+140: Requesting "CONNECT usermatch.krxd.net:443 HTTP/1.1" from usermatch.krxd.net
+131: Requesting "CONNECT amazon.partners.tremorhub.com:443 HTTP/1.1" from amazon.partners.tremorhub.com
+137: Requesting "CONNECT beacon.krxd.net:443 HTTP/1.1" from beacon.krxd.net
+128: Requesting "CONNECT px.surveywall-api.survata.com:443 HTTP/1.1" from px.surveywall-api.survata.com
+150: Requesting "CONNECT www.facebook.com:443 HTTP/1.1" from www.facebook.com
+134: Requesting "CONNECT pixel.rubiconproject.com:443 HTTP/1.1" from pixel.rubiconproject.com
+147: Requesting "CONNECT token.rubiconproject.com:443 HTTP/1.1" from token.rubiconproject.com
+144: Requesting "CONNECT uipglob.semasio.net:443 HTTP/1.1" from uipglob.semasio.net
+143: Requesting "CONNECT ssum-sec.casalemedia.com:443 HTTP/1.1" from ssum-sec.casalemedia.com
+136: Requesting "CONNECT ads.stickyadstv.com:443 HTTP/1.1" from ads.stickyadstv.com
+133: Requesting "CONNECT cms.analytics.yahoo.com:443 HTTP/1.1" from cms.analytics.yahoo.com
+149: Requesting "CONNECT loadus.exelator.com:443 HTTP/1.1" from loadus.exelator.com
+138: Requesting "CONNECT bs.serving-sys.com:443 HTTP/1.1" from bs.serving-sys.com
+152: Requesting "CONNECT sync.taboola.com:443 HTTP/1.1" from sync.taboola.com
+145: Requesting "CONNECT ib.adnxs.com:443 HTTP/1.1" from ib.adnxs.com
+146: Requesting "CONNECT image2.pubmatic.com:443 HTTP/1.1" from image2.pubmatic.com
+130: Requesting "CONNECT analytics.twitter.com:443 HTTP/1.1" from analytics.twitter.com
+151: Requesting "CONNECT image6.pubmatic.com:443 HTTP/1.1" from image6.pubmatic.com
+153: "POST http://ocsp.sectigo.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+154: "POST http://status.rapidssl.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+156: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+155: "POST http://status.geotrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+157: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+154: Requesting "POST http://status.rapidssl.com/ HTTP/1.1" from status.rapidssl.com
+153: Requesting "POST http://ocsp.sectigo.com/ HTTP/1.1" from ocsp.sectigo.com
+156: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+157: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+155: Requesting "POST http://status.geotrust.com/ HTTP/1.1" from status.geotrust.com
+125: Tunnel closed
+73: Invalid request. recv return negative or zero.
+158: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+159: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+161: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+160: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+159: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+158: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+162: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+162: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+160: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+161: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+163: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:52 2022
+118: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+164: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+166: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+167: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+165: "POST http://status.geotrust.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+168: "CONNECT lm.serving-sys.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+167: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+164: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+118: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+163: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+166: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+165: Requesting "POST http://status.geotrust.com/ HTTP/1.1" from status.geotrust.com
+168: Requesting "CONNECT lm.serving-sys.com:443 HTTP/1.1" from lm.serving-sys.com
+143: Tunnel closed
+137: Tunnel closed
+145: Tunnel closed
+150: Tunnel closed
+144: Tunnel closed
+151: Tunnel closed
+136: Tunnel closed
+170: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+169: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+171: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+152: Tunnel closed
+132: Tunnel closed
+134: Tunnel closed
+147: Tunnel closed
+107: Tunnel closed
+118: Tunnel closed
+168: Tunnel closed
+139: Tunnel closed
+149: Tunnel closed
+173: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+133: Tunnel closed
+172: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+130: Tunnel closed
+146: Tunnel closed
+172: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+169: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+170: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+171: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+173: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+174: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+175: "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+178: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+176: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+177: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:53 2022
+176: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+174: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+178: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+177: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+175: Requesting "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from ocsp.globalsign.com
+104: Tunnel closed
+95: Invalid request. recv return negative or zero.
+97: Invalid request. recv return negative or zero.
+179: "GET http://httpbin.org/forms/post HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:55:55 2022
+179: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
+128: Tunnel closed
+180: "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:06 2022
+180: Requesting "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from c.cnzz.com
+181: "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=436908064 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:07 2022
+181: Requesting "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=436908064 HTTP/1.1" from cnzz.mmstat.com
+182: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=1617426623 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:07 2022
+183: "GET http://pcookie.cnzz.com/app.gif?&cna=HquVGgT7SFQCAUOfWA2p/wh2 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:07 2022
+183: Requesting "GET http://pcookie.cnzz.com/app.gif?&cna=HquVGgT7SFQCAUOfWA2p/wh2 HTTP/1.1" from pcookie.cnzz.com
+182: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=1617426623 HTTP/1.1" from z7.cnzz.com
+99: Tunnel closed
+184: "GET http://www.cad.zju.edu.cn/Latestnews/news/783.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:11 2022
+184: Requesting "GET http://www.cad.zju.edu.cn/Latestnews/news/783.html HTTP/1.1" from www.cad.zju.edu.cn
+185: "GET http://www.cad.zju.edu.cn/plus/count.php?view=yes&aid=783&mid=5 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:12 2022
+186: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/lanname1.gif HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:12 2022
+187: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/zdlon.gif HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:12 2022
+187: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/zdlon.gif HTTP/1.1" from www.cad.zju.edu.cn
+185: Requesting "GET http://www.cad.zju.edu.cn/plus/count.php?view=yes&aid=783&mid=5 HTTP/1.1" from www.cad.zju.edu.cn
+186: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/lanname1.gif HTTP/1.1" from www.cad.zju.edu.cn
+188: "GET http://www.cad.zju.edu.cn/uploads/allimg/111130/1_1625305191.gif HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:13 2022
+70: Tunnel closed
+189: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2FLatestnews%2Fnews%2F783.html&t=%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%91%A8%E6%98%86%E6%95%99%E6%8E%88%E9%A2%86%E8%A1%94%E5%AE%8C%E6%88%90%E7%9A%84%E2%80%9C%E7%9C%9F%E5%AE%9E%E6%84%9F%E5%9B%BE%E5%BD%A2%E7%9A%84%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA%E4%B8%8E%E6%96%B9%E6%B3%95%E2%80%9D%E8%8E%B7%E5%9B%BD%E5%AE%B6%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E5%A5%96%E4%BA%8C%E7%AD%89%E5%A5%96...&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=1118934326 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:13 2022
+188: Requesting "GET http://www.cad.zju.edu.cn/uploads/allimg/111130/1_1625305191.gif HTTP/1.1" from www.cad.zju.edu.cn
+189: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2FLatestnews%2Fnews%2F783.html&t=%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%91%A8%E6%98%86%E6%95%99%E6%8E%88%E9%A2%86%E8%A1%94%E5%AE%8C%E6%88%90%E7%9A%84%E2%80%9C%E7%9C%9F%E5%AE%9E%E6%84%9F%E5%9B%BE%E5%BD%A2%E7%9A%84%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA%E4%B8%8E%E6%96%B9%E6%B3%95%E2%80%9D%E8%8E%B7%E5%9B%BD%E5%AE%B6%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E5%A5%96%E4%BA%8C%E7%AD%89%E5%A5%96...&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=1118934326 HTTP/1.1" from z7.cnzz.com
+190: "GET http://www.cad.zju.edu.cn/Latestnews/news/782.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:16 2022
+190: Requesting "GET http://www.cad.zju.edu.cn/Latestnews/news/782.html HTTP/1.1" from www.cad.zju.edu.cn
+191: "GET http://www.cad.zju.edu.cn/tongzhi/zwtz/71.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:20 2022
+191: Requesting "GET http://www.cad.zju.edu.cn/tongzhi/zwtz/71.html HTTP/1.1" from www.cad.zju.edu.cn
+192: "GET http://www.cad.zju.edu.cn/plus/count.php?view=yes&aid=71&mid=0 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:21 2022
+123: Tunnel closed
+192: Requesting "GET http://www.cad.zju.edu.cn/plus/count.php?view=yes&aid=71&mid=0 HTTP/1.1" from www.cad.zju.edu.cn
+193: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2FLatestnews%2Fnews%2F782.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Ftongzhi%2Fzwtz%2F71.html&t=ISCA%202012%EF%BC%9AThe%2039th%20International%20Symposi...&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=610590298 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:22 2022
+193: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2FLatestnews%2Fnews%2F782.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Ftongzhi%2Fzwtz%2F71.html&t=ISCA%202012%EF%BC%9AThe%2039th%20International%20Symposi...&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=610590298 HTTP/1.1" from z7.cnzz.com
+127: Tunnel closed
+194: "GET http://www.cad.zju.edu.cn/Training/Teamconstruction/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:24 2022
+194: Requesting "GET http://www.cad.zju.edu.cn/Training/Teamconstruction/ HTTP/1.1" from www.cad.zju.edu.cn
+195: "GET http://www.cad.zju.edu.cn/uploads/allimg/111209/1_1239386731.gif HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:25 2022
+196: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/weibu.gif HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:25 2022
+197: "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=1551974955 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:25 2022
+197: Requesting "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=1551974955 HTTP/1.1" from cnzz.mmstat.com
+196: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/weibu.gif HTTP/1.1" from www.cad.zju.edu.cn
+195: Requesting "GET http://www.cad.zju.edu.cn/uploads/allimg/111209/1_1239386731.gif HTTP/1.1" from www.cad.zju.edu.cn
+198: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Ftongzhi%2Fzwtz%2F71.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2FTraining%2FTeamconstruction%2F&t=%E5%8D%9A%E5%A3%AB%E7%94%9F%E5%9F%B9%E5%85%BB-%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=69764165 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:26 2022
+199: "GET http://pcookie.cnzz.com/app.gif?&cna=HquVGgT7SFQCAUOfWA2p/wh2 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:26 2022
+198: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Ftongzhi%2Fzwtz%2F71.html&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2FTraining%2FTeamconstruction%2F&t=%E5%8D%9A%E5%A3%AB%E7%94%9F%E5%9F%B9%E5%85%BB-%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=69764165 HTTP/1.1" from z7.cnzz.com
+199: Requesting "GET http://pcookie.cnzz.com/app.gif?&cna=HquVGgT7SFQCAUOfWA2p/wh2 HTTP/1.1" from pcookie.cnzz.com
+129: Tunnel closed
+200: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:29 2022
+200: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+201: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:29 2022
+201: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
+202: "GET http://www.cad.zju.edu.cn/Innovation/LuZengyong/ HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:36 2022
+202: Requesting "GET http://www.cad.zju.edu.cn/Innovation/LuZengyong/ HTTP/1.1" from www.cad.zju.edu.cn
+203: "GET http://www.cad.zju.edu.cn/uploads/allimg/111130/1_1627025121.gif HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:37 2022
+204: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2FTraining%2FTeamconstruction%2F&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2FInnovation%2FLuZengyong%2F&t=%E9%99%86%E5%A2%9E%E9%95%9B%E9%AB%98%E7%A7%91%E6%8A%80%E5%A5%96-%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=678408345 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:37 2022
+203: Requesting "GET http://www.cad.zju.edu.cn/uploads/allimg/111130/1_1627025121.gif HTTP/1.1" from www.cad.zju.edu.cn
+204: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2FTraining%2FTeamconstruction%2F&lg=zh-cn&ntime=1645130660&cnzz_eid=1742496059-1645130660-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2FInnovation%2FLuZengyong%2F&t=%E9%99%86%E5%A2%9E%E9%95%9B%E9%AB%98%E7%A7%91%E6%8A%80%E5%A5%96-%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0992bc59285-01e810deb898e48-4c3e227d-e1000-17f0992bc5a660&h=1&rnd=678408345 HTTP/1.1" from z7.cnzz.com
+205: "GET http://www.cad.zju.edu.cn/Innovation/LuZengyong/659.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 16:56:40 2022
+205: Requesting "GET http://www.cad.zju.edu.cn/Innovation/LuZengyong/659.html HTTP/1.1" from www.cad.zju.edu.cn
+206: Invalid request. recv return negative or zero.
+126: Tunnel closed
+108: Tunnel closed
+111: Tunnel closed
+105: Tunnel closed
+110: Tunnel closed
+109: Tunnel closed
+84: Tunnel closed
+85: Tunnel closed
+90: Tunnel closed
+121: Tunnel closed
+96: Tunnel closed
+87: Tunnel closed
+88: Tunnel closed
+91: Tunnel closed
+92: Tunnel closed
+114: Tunnel closed
+86: Tunnel closed
+80: Tunnel closed
+93: Tunnel closed
+135: Tunnel closed
+94: Tunnel closed
+113: Tunnel closed
+122: Tunnel closed
+148: Tunnel closed
+131: Tunnel closed
+68: Tunnel closed
+2: Tunnel closed
+1: Tunnel closed
+28: Tunnel closed
+69: Tunnel closed
+142: Tunnel closed
+112: Tunnel closed
+72: Tunnel closed
+140: Tunnel closed
+76: Tunnel closed
+21: Tunnel closed
+48: Tunnel closed
+5: Tunnel closed
+100: Tunnel closed
+117: Tunnel closed
+103: Tunnel closed
+98: Tunnel closed
+11: Tunnel closed
+124: Tunnel closed
+138: Tunnel closed
+29: Tunnel closed
+82: Tunnel closed
+55: Tunnel closed
+141: Tunnel closed
+26: Tunnel closed
+18: Tunnel closed
+46: Tunnel closed
+3: Tunnel closed
+20: Tunnel closed
+71: Tunnel closed
+66: Tunnel closed
+54: Tunnel closed
+65: Tunnel closed
+44: Tunnel closed
+23: Tunnel closed
+31: Tunnel closed
+53: Tunnel closed
+14: Tunnel closed

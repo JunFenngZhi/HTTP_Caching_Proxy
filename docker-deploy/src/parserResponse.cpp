@@ -23,5 +23,7 @@ void parserResponse::parseChunked() {
   if ((pos = response.find("chunked")) != std::string::npos) {
     this->chunked = true;
   }
-  this->chunked = false;
+  else{
+    this->chunked = false;
+  }
 }

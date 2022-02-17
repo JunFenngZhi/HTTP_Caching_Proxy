@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 
+
 using namespace std;
 
 class parserRequest {
@@ -34,6 +35,7 @@ class parserRequest {
   void checkRequestFormat();
 
   inline void printResult() {
+    cout << "----------------------------------------------------------" << endl;
     cout << "p.request:" << request << endl;
     cout << "p.requestline:" << requestline << endl;
     cout << "p.host:" << host << endl;
