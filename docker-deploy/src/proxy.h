@@ -31,10 +31,14 @@ class proxy {
   static void getWholeMessage(int firstMessageLen,
                               int contentLength,
                               int headerSize,
-                              int serverId,
-                              const string & firstResponse,
+                              int server_fd,
+                              const string & firstMessage,
                               string & wholeMessage);
   static void resourceClean(int server_fd, clientInfo * info);
+  static void handle_POST(int server_fd,
+                          clientInfo * client_info,
+                          string & request,
+                          const parserRequest & p);
 };
 
 #endif
