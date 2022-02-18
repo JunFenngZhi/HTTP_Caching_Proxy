@@ -31,7 +31,7 @@ class proxy {
   static void handle_GET(clientInfo * client_info,
                          int server_fd,
                          const string & request,
-                         const string & host);
+                         const parserRequest & request_p);
   static void getWholeMessage(int firstMessageLen,
                               int contentLength,
                               int headerSize,

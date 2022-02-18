@@ -113,7 +113,7 @@ void * proxy::handleRequest(void * info) {
   else if (p.method == "GET") {
     logger::displayRequest(client_info, p.requestline, p.host);
     try {
-      handle_GET(client_info, server_fd, request, p.host);
+      handle_GET(client_info, server_fd, request, p);
     }
     catch (const std::exception & e) {
       std::cerr << client_info->Id << ":" << e.what() << '\n';
@@ -190,7 +190,7 @@ void proxy::handle_CONNECT(int client_fd, int server_fd) {
 void proxy::handle_GET(clientInfo * client_info,
                        int server_fd,
                        const string & request,
-                       const string & host) {
+                       const parserRequest & request_p) {
   // send client request diretly to server
   if (send(server_fd, request.c_str(), request.length(), 0) <= 0) {
     throw MyException("Fail to send GET request to server.\n");
@@ -209,7 +209,7 @@ void proxy::handle_GET(clientInfo * client_info,
   p.parse(firstResponse);
 
   //write info into logfile
-  logger::printReceievedResponse(client_info, p.status_line, host);
+  logger::printReceievedResponse(client_info, p.status_line, request_p.host);
 
   // chunked mode. proxy recv packets from server and then directly forward to the client
   if (p.chunked == true) {
