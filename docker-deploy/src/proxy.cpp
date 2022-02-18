@@ -113,7 +113,7 @@ void * proxy::handleRequest(void * info) {
   else if (p.method == "GET") {
     logger::displayRequest(client_info, p.requestline, p.host);
     try {
-      handle_GET(client_info, server_fd, request);
+      handle_GET(client_info, server_fd, request, p.host);
     }
     catch (const std::exception & e) {
       std::cerr << client_info->Id << ":" << e.what() << '\n';
@@ -187,7 +187,10 @@ void proxy::handle_CONNECT(int client_fd, int server_fd) {
   handle GET for client. proxy send client request to server directly. Then receive response from server.
   response can be chuncked or content-length mode. proxy handle it in differernt way.
 */
-void proxy::handle_GET(clientInfo * client_info, int server_fd, const string & request) {
+void proxy::handle_GET(clientInfo * client_info,
+                       int server_fd,
+                       const string & request,
+                       const string & host) {
   // send client request diretly to server
   if (send(server_fd, request.c_str(), request.length(), 0) <= 0) {
     throw MyException("Fail to send GET request to server.\n");
@@ -205,17 +208,21 @@ void proxy::handle_GET(clientInfo * client_info, int server_fd, const string & r
   parserResponse p;
   p.parse(firstResponse);
 
+  //write info into logfile
+  logger::printReceievedResponse(client_info, p.status_line, host);
+
   // chunked mode. proxy recv packets from server and then directly forward to the client
   if (p.chunked == true) {
     // send the first packet
-    if(send(client_info->client_fd,firstResponse.c_str(),firstResponse.length(),0) < 0){
+    if (send(client_info->client_fd, firstResponse.c_str(), firstResponse.length(), 0) <
+        0) {
       throw MyException("Fail to send chunk to client.\n");
-    }  
+    }
     while (1) {
       int len = recv(server_fd, &(buffer.data()[0]), MAX_LENGTH, 0);
       if (len <= 0)  //already send all chunks
         break;
-      if(send(client_info->client_fd, &(buffer.data()[0]), len, 0) < 0){
+      if (send(client_info->client_fd, &(buffer.data()[0]), len, 0) < 0) {
         throw MyException("Fail to send chunk to client.\n");
       }
     }
@@ -228,7 +235,8 @@ void proxy::handle_GET(clientInfo * client_info, int server_fd, const string & r
     string wholeMessage;
     getWholeMessage(
         len, contentLength, headerSize, server_fd, firstResponse, wholeMessage);
-    if(send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0) < 0){
+    if (send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0) <
+        0) {
       throw MyException("fail to send whole GET response to client.\n");
     }
   }
@@ -281,14 +289,15 @@ void proxy::handle_POST(int server_fd,
                         clientInfo * client_info,
                         string & request,
                         const parserRequest & p) {
-  int content_length = stoi(p.list["content-length"]);
+  unordered_map<string, string> list = p.list;
+  int content_length = stoi(list["Content-Length"]);
   int headerSize = p.head_length;
 
   //get whole POST request and send it to server
   string wholeMessage;
   getWholeMessage(
       request.length(), content_length, headerSize, server_fd, request, wholeMessage);
-  if(send(server_fd, wholeMessage.c_str(), wholeMessage.length(), 0)<0){
+  if (send(server_fd, wholeMessage.c_str(), wholeMessage.length(), 0) < 0) {
     throw MyException("fail to send POST message to server.\n");
   }
 
@@ -298,7 +307,7 @@ void proxy::handle_POST(int server_fd,
   if (len < 0) {
     throw MyException("Fail to receive POST's reponse from serever.\n");
   }
-  if(send(client_info->client_fd, buffer.data(), len, 0) < 0){
+  if (send(client_info->client_fd, buffer.data(), len, 0) < 0) {
     throw MyException("fail to send POST message's response to client.\n");
   }
 }

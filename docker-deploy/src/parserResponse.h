@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <unordered_map>
 
 #include "exception.h"
 
@@ -16,6 +17,7 @@ class parserResponse {
   string content_length;
   bool chunked;
   string status_line;
+  unordered_map<string, string> list;
 
  public:
   parserResponse() {}
@@ -27,6 +29,7 @@ class parserResponse {
     parseHead_Length();
     parseContent_Length();
     parseChunked();
+    parseHeaderContent();
 
     // make sure only one of the chunked and content-length is valid
     if ((this->chunked == true && !content_length.empty()) ||
@@ -43,6 +46,8 @@ class parserResponse {
   void parseChunked();
 
   void parseContent_Length();
+
+  void parseHeaderContent();
 
   inline void printResult() {
     cout << "----------------------------------------------------------" << endl;

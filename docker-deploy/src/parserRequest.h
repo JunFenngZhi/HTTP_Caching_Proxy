@@ -1,8 +1,8 @@
 #ifndef _PARSERREQUEST_H
 #define _PARSERREQUEST_H
-#include <string>
 #include <iostream>
-
+#include <string>
+#include <unordered_map>
 
 using namespace std;
 
@@ -13,6 +13,8 @@ class parserRequest {
   string port;
   string method;
   string requestline;
+  unordered_map<string, string> list;
+  int head_length;
 
  public:
   parserRequest() {}
@@ -24,6 +26,7 @@ class parserRequest {
     parseRequestLine();
     parseMethod();
     parseHost();
+    parseHeaderContent();
   }
 
   void parseRequestLine();
@@ -33,6 +36,10 @@ class parserRequest {
   void parseHost();
 
   void checkRequestFormat();
+
+  void parseHeaderContent();
+
+  void parseHead_Length();
 
   inline void printResult() {
     cout << "----------------------------------------------------------" << endl;

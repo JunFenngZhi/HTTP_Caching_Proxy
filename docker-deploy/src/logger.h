@@ -41,6 +41,27 @@ class logger {
     pthread_mutex_unlock(&mutex);
   }
 
+  static void printReceievedResponse(clientInfo * client_info,
+                                     string status_line,
+                                     string host) {
+    pthread_mutex_lock(&mutex);
+    logfile << client_info->Id << ": Received \"" << status_line << "\" from " << host
+            << std::endl;
+    pthread_mutex_unlock(&mutex);
+  }
+
+  static void printNotInCache(clientInfo * client_info) {
+    pthread_mutex_lock(&mutex);
+    logfile << client_info->Id << ": not in cache" << std::endl;
+    pthread_mutex_unlock(&mutex);
+  }
+
+  static void printResponding(clientInfo * client_info, string status_line) {
+    pthread_mutex_lock(&mutex);
+    logfile << client_info->Id << ": Responding \"" << status_line << std::endl;
+    pthread_mutex_unlock(&mutex);
+  }
+
   static string getTime() {
     time_t currTime = time(0);
     struct tm * nowTime = gmtime(&currTime);

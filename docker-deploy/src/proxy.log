@@ -1,24 +1,37 @@
-0: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:00 2022
-0: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
-1: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:00 2022
-1: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
-2: "GET http://httpbin.org/forms/post HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:06 2022
-2: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
-3: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:06 2022
-3: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-4: "GET http://httpbin.org/forms/post HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:20 2022
-4: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
-5: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:33 2022
-5: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
-6: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:25:34 2022
-6: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
-5: Tunnel closed
-7: "POST http://httpbin.org/post HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:26:39 2022
-7: Requesting "POST http://httpbin.org/post HTTP/1.1" from httpbin.org
-3: Tunnel closed
-8: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:28:50 2022
-8: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
-8: Tunnel closed
-9: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Thu Feb 17 17:43:50 2022
-9: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+0: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:04 2022
+1: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:04 2022
+0: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+2: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:04 2022
+3: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:04 2022
+1: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+2: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+3: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+4: "POST http://r3.o.lencr.org/ HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:04 2022
+4: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+5: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:06 2022
+5: Requesting "CONNECT www.youtube.com:443 HTTP/1.1" from www.youtube.com
+6: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:06 2022
+6: Requesting "CONNECT i.ytimg.com:443 HTTP/1.1" from i.ytimg.com
+7: "CONNECT accounts.google.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:06 2022
+7: Requesting "CONNECT accounts.google.com:443 HTTP/1.1" from accounts.google.com
+8: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:07 2022
+8: Requesting "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from googleads.g.doubleclick.net
+10: "CONNECT www.gstatic.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:07 2022
+10: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
+11: "CONNECT www.google.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:08 2022
+9: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:08 2022
+11: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+9: Requesting "CONNECT fonts.gstatic.com:443 HTTP/1.1" from fonts.gstatic.com
 9: Tunnel closed
+13: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:08 2022
+13: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+14: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:08 2022
+14: Requesting "CONNECT static.doubleclick.net:443 HTTP/1.1" from static.doubleclick.net
+12: Invalid request. recv return negative or zero.
+15: Invalid request. recv return negative or zero.
+16: "GET http://httpbin.org/forms/post HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:59 2022
+16: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
+16: Received "HTTP/1.1 200 OK" from httpbin.org
+17: "GET http://httpbin.org/favicon.ico HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 15:02:59 2022
+17: Requesting "GET http://httpbin.org/favicon.ico HTTP/1.1" from httpbin.org
+17: Received "HTTP/1.1 404 NOT FOUND" from httpbin.org
