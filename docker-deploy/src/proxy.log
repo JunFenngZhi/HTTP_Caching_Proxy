@@ -1,94 +1,35 @@
-0: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:05 2022
-1: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:05 2022
-0: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
-1: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-2: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:08 2022
-2: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
-2: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-3: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:09 2022
-4: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:09 2022
-8: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:09 2022
-3: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
-8: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
-4: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
-3: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-8: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-4: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-5: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/more1.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:10 2022
-6: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dian.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:10 2022
-7: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/more.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:30:10 2022
-5: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/more1.gif HTTP/1.1" from www.cad.zju.edu.cn
-6: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dian.gif HTTP/1.1" from www.cad.zju.edu.cn
-7: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/more.gif HTTP/1.1" from www.cad.zju.edu.cn
-5: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-6: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-7: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-9: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/menu.css HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:10 2022
-9: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/menu.css HTTP/1.1" from www.cad.zju.edu.cn
-9: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-16: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/logo.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-11: "GET http://s13.cnzz.com/stat.php?id=5791829&show=pic HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-15: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dian2.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-17: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/serch.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-14: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/ky.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-13: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/xs.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-10: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/buttom.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-18: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/menuul.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-12: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dwjs.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-21: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dt.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-19: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/l5.png HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-20: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/xwxs.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-24: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/keti.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-23: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/zhedab.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-22: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/zhengwen.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-25: "GET http://www.cad.zju.edu.cn/templets/default/imgzd/link.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:11 2022
-15: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dian2.gif HTTP/1.1" from www.cad.zju.edu.cn
-13: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/xs.gif HTTP/1.1" from www.cad.zju.edu.cn
-23: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/zhedab.jpg HTTP/1.1" from www.cad.zju.edu.cn
-25: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/link.gif HTTP/1.1" from www.cad.zju.edu.cn
-10: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/buttom.jpg HTTP/1.1" from www.cad.zju.edu.cn
-20: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/xwxs.jpg HTTP/1.1" from www.cad.zju.edu.cn
-12: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dwjs.jpg HTTP/1.1" from www.cad.zju.edu.cn
-16: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/logo.jpg HTTP/1.1" from www.cad.zju.edu.cn
-18: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/menuul.jpg HTTP/1.1" from www.cad.zju.edu.cn
-17: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/serch.jpg HTTP/1.1" from www.cad.zju.edu.cn
-14: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/ky.gif HTTP/1.1" from www.cad.zju.edu.cn
-24: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/keti.gif HTTP/1.1" from www.cad.zju.edu.cn
-21: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/dt.gif HTTP/1.1" from www.cad.zju.edu.cn
-22: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/zhengwen.gif HTTP/1.1" from www.cad.zju.edu.cn
-19: Requesting "GET http://www.cad.zju.edu.cn/templets/default/imgzd/l5.png HTTP/1.1" from www.cad.zju.edu.cn
-11: Requesting "GET http://s13.cnzz.com/stat.php?id=5791829&show=pic HTTP/1.1" from s13.cnzz.com
-15: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-13: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-25: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-23: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-16: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-20: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-10: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-14: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-17: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-18: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-12: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-19: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-24: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-21: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-22: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
-11: Received "HTTP/1.1 200 OK" from s13.cnzz.com
-27: "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:12 2022
-26: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=zh-cn&ntime=none&cnzz_eid=1800016525-1645223445-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0ef5eb0e344-00c153e00150fc-4c3e227d-e1000-17f0ef5eb0f417&h=1&rnd=871978347 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:12 2022
-26: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=zh-cn&ntime=none&cnzz_eid=1800016525-1645223445-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1280x720&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0ef5eb0e344-00c153e00150fc-4c3e227d-e1000-17f0ef5eb0f417&h=1&rnd=871978347 HTTP/1.1" from z7.cnzz.com
-27: Requesting "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from c.cnzz.com
-26: Received "HTTP/1.1 200 OK" from z7.cnzz.com
-27: Received "HTTP/1.1 200 OK" from c.cnzz.com
-28: "GET http://icon.cnzz.com/img/pic.gif HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:13 2022
-28: Requesting "GET http://icon.cnzz.com/img/pic.gif HTTP/1.1" from icon.cnzz.com
-28: Received "HTTP/1.1 200 OK" from icon.cnzz.com
-29: "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=1882485002 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:14 2022
-29: Requesting "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=1882485002 HTTP/1.1" from cnzz.mmstat.com
-29: Received "HTTP/1.1 302 Found" from cnzz.mmstat.com
-30: "GET http://pcookie.cnzz.com/app.gif?&cna=MwyXGi9pf30CAUOfWA0IHVE1 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:31:15 2022
-30: Requesting "GET http://pcookie.cnzz.com/app.gif?&cna=MwyXGi9pf30CAUOfWA0IHVE1 HTTP/1.1" from pcookie.cnzz.com
-30: Received "HTTP/1.1 200 OK" from pcookie.cnzz.com
-31: "GET http://www.cad.zju.edu.cn/uploads/allimg/210429/5-210429114311396-lp.jpg HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 17:32:11 2022
-31: Requesting "GET http://www.cad.zju.edu.cn/uploads/allimg/210429/5-210429114311396-lp.jpg HTTP/1.1" from www.cad.zju.edu.cn
-31: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
+0: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
+0: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+1: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
+2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
+1: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+3: "CONNECT www.facebook.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
+2: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+3: Requesting "CONNECT www.facebook.com:443 HTTP/1.1" from www.facebook.com
+4: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:45 2022
+4: Requesting "CONNECT www.youtube.com:443 HTTP/1.1" from www.youtube.com
+5: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:45 2022
+5: Requesting "CONNECT i.ytimg.com:443 HTTP/1.1" from i.ytimg.com
+6: "CONNECT accounts.google.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:45 2022
+6: Requesting "CONNECT accounts.google.com:443 HTTP/1.1" from accounts.google.com
+7: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:46 2022
+7: Requesting "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from googleads.g.doubleclick.net
+9: "CONNECT www.gstatic.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:47 2022
+9: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
+10: "CONNECT www.google.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:47 2022
+10: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+11: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:47 2022
+11: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
+12: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:48 2022
+12: Requesting "CONNECT static.doubleclick.net:443 HTTP/1.1" from static.doubleclick.net
+8: Invalid request. recv return negative or zero.
+13: Invalid request. recv return negative or zero.
+1: Tunnel closed
+0: Tunnel closed
+6: Tunnel closed
+5: Tunnel closed
+9: Tunnel closed
+10: Tunnel closed
+11: Tunnel closed
+12: Tunnel closed
+2: Tunnel closed

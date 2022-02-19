@@ -15,6 +15,7 @@ class parserRequest {
   string requestline;
   unordered_map<string, string> list;
   int head_length;
+  string URI;
 
  public:
   parserRequest() {}
@@ -27,6 +28,7 @@ class parserRequest {
     parseMethod();
     parseHost();
     parseHeaderContent();
+    parseURI();
   }
 
   void parseRequestLine();
@@ -41,9 +43,11 @@ class parserRequest {
 
   void parseHead_Length();
 
-  inline void printResult() const {
-    cout << "--------------------REQUEST-------------------------------" << endl;
-    //cout << "p.request:" << request << endl;
+  void parseURI();
+
+  inline void printResult() {
+    cout << "----------------------------------------------------------" << endl;
+    cout << "p.request:" << request << endl;
     cout << "p.requestline:" << requestline << endl;
     //cout << "p.host:" << host << endl;
     //cout << "p.method:" << method << endl;
