@@ -30,7 +30,6 @@ class proxy {
   static void handle_CONNECT(int client_fd, int server_fd);
   static void handle_GET(clientInfo * client_info,
                          int server_fd,
-                         const string & request,
                          const parserRequest & request_p);
   static void getWholeMessage(int firstMessageLen,
                               int contentLength,

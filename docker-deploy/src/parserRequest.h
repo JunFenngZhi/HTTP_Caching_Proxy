@@ -41,13 +41,16 @@ class parserRequest {
 
   void parseHead_Length();
 
-  inline void printResult() {
-    cout << "----------------------------------------------------------" << endl;
-    cout << "p.request:" << request << endl;
+  inline void printResult() const {
+    cout << "--------------------REQUEST-------------------------------" << endl;
+    //cout << "p.request:" << request << endl;
     cout << "p.requestline:" << requestline << endl;
-    cout << "p.host:" << host << endl;
-    cout << "p.method:" << method << endl;
-    cout << "p.port:" << port << endl;
+    //cout << "p.host:" << host << endl;
+    //cout << "p.method:" << method << endl;
+    //cout << "p.port:" << port << endl;
+    for (auto it : list) {
+      cout << it.first << ":" << it.second << endl;
+    }
     cout << "----------------------------------------------------------" << endl;
   }
 };

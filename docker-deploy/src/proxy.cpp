@@ -113,7 +113,7 @@ void * proxy::handleRequest(void * info) {
   else if (p.method == "GET") {
     logger::displayRequest(client_info, p.requestline, p.host);
     try {
-      handle_GET(client_info, server_fd, request, p);
+      handle_GET(client_info, server_fd, p);
     }
     catch (const std::exception & e) {
       std::cerr << client_info->Id << ":" << e.what() << '\n';
@@ -189,8 +189,10 @@ void proxy::handle_CONNECT(int client_fd, int server_fd) {
 */
 void proxy::handle_GET(clientInfo * client_info,
                        int server_fd,
-                       const string & request,
                        const parserRequest & request_p) {
+  //request_p.printResult();
+  string request = request_p.request;
+
   // send client request diretly to server
   if (send(server_fd, request.c_str(), request.length(), 0) <= 0) {
     throw MyException("Fail to send GET request to server.\n");
@@ -205,14 +207,15 @@ void proxy::handle_GET(clientInfo * client_info,
 
   // parse response
   string firstResponse(buffer.data(), len);
-  parserResponse p;
-  p.parse(firstResponse);
+  parserResponse response_p;
+  response_p.parse(firstResponse);
+  //response_p.printResult();
 
   //write info into logfile
-  logger::printReceievedResponse(client_info, p.status_line, request_p.host);
+  logger::printReceievedResponse(client_info, response_p.status_line, request_p.host);
 
   // chunked mode. proxy recv packets from server and then directly forward to the client
-  if (p.chunked == true) {
+  if (response_p.chunked == true) {
     // send the first packet
     if (send(client_info->client_fd, firstResponse.c_str(), firstResponse.length(), 0) <
         0) {
@@ -230,8 +233,8 @@ void proxy::handle_GET(clientInfo * client_info,
   }
   else {  // not chunked
     //get the whole message and then send it to the client
-    int contentLength = stoi(p.content_length);
-    int headerSize = p.head_length;
+    int contentLength = stoi(response_p.content_length);
+    int headerSize = response_p.head_length;
     string wholeMessage;
     getWholeMessage(
         len, contentLength, headerSize, server_fd, firstResponse, wholeMessage);

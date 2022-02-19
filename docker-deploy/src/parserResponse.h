@@ -50,12 +50,13 @@ class parserResponse {
   void parseHeaderContent();
 
   inline void printResult() {
-    cout << "----------------------------------------------------------" << endl;
-    cout << "p.response:" << response << endl;
+    cout << "-------------------RESPONSE-----------------------------" << endl;
+    //cout << "p.response:" << response << endl;
     cout << "p.status_line:" << status_line << endl;
-    cout << "p.chunked:" << chunked << endl;
-    cout << "p.content_length:" << content_length << endl;
     cout << "p.head_length:" << head_length << endl;
+    for (auto it : list) {
+      cout << it.first << ":" << it.second << endl;
+    }
     cout << "----------------------------------------------------------" << endl;
   }
 };
