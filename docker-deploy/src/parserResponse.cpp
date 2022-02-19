@@ -51,3 +51,71 @@ void parserResponse::parseHeaderContent() {
     Header_Content = Header_Content.substr(findPosEnd + 2);
   }
 }
+
+void parserResponse::parseCacheControl() {
+  string cacheControl;
+  cacheControl = this->list["Cache-Control"];
+  if (cacheControl == "") {
+    this->cache_control = false;  // cache control field does not exist
+  }
+  else {
+    this->cache_control =
+        true;  //cache control field exist, and we need to parse this filed further
+  }
+}
+
+void parserResponse::parseMaxage() {
+  //Cache control filed does not exist, so we set max_age = -1 to indicate that maxage does not exist
+  if (this->cache_control == false) {
+    this->max_age = -1;
+  }
+  else {
+    string cache_control_value = list["Cache-Control"];
+    if (cache_control_value.find("max-age=") == string::npos) {
+      //does not have max-age, so set -1
+      this->max_age = -1;
+    }
+    else {
+      size_t max_age_start_pos = cache_control_value.find("max-age=") + 8;
+      size_t max_age_end_pos = cache_control_value.find(",", max_age_start_pos);
+      string max_age = cache_control_value.substr(max_age_start_pos,
+                                                  max_age_end_pos - max_age_start_pos);
+      this->max_age = stoi(max_age);
+    }
+  }
+}
+
+void parserResponse::parseRevalidate() {
+  //Cache control filed does not exist, so we set revalidate = false to indicate that revalidate does not exist
+  if (this->cache_control == false) {
+    this->revalidate = false;
+  }
+  else {
+    string cache_control_value = list["Cache-Control"];
+    if (cache_control_value.find("must-revalidate") == string::npos &&
+        cache_control_value.find("no-cache") == string::npos) {
+      //does not have no cache and must-revalidate, so set false
+      this->revalidate = false;
+    }
+    else {
+      this->revalidate = true;
+    }
+  }
+}
+
+void parserResponse::parseNostore() {
+  //Cache control filed does not exist, so we set no_store = false to indicate that no_store does not exist
+  if (this->cache_control == false) {
+    this->no_store = false;
+  }
+  else {
+    string cache_control_value = list["Cache-Control"];
+    if (cache_control_value.find("no-store") == string::npos) {
+      //does not have no store, so set false
+      this->no_store = false;
+    }
+    else {
+      this->no_store = true;
+    }
+  }
+}

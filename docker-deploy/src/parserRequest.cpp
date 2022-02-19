@@ -82,3 +82,9 @@ void parserRequest::parseHeaderContent() {
     Header_Content = Header_Content.substr(findPosEnd + 2);
   }
 }
+
+void parserRequest::parseURI() {
+  size_t URI_start_pos = this->requestline.find(" ") + 1;
+  size_t URI_end_pos = this->requestline.find(" HTTP");
+  this->URI = this->requestline.substr(URI_start_pos, URI_end_pos - URI_start_pos);
+}

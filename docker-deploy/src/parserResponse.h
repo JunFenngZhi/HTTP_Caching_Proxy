@@ -18,6 +18,11 @@ class parserResponse {
   bool chunked;
   string status_line;
   unordered_map<string, string> list;
+  bool
+      cache_control;  //true means have cache control field, false means have no cache control field
+  int max_age;  // -1 means no max-age
+  bool revalidate;
+  bool no_store;
 
  public:
   parserResponse() {}
@@ -30,6 +35,10 @@ class parserResponse {
     parseContent_Length();
     parseChunked();
     parseHeaderContent();
+    parseCacheControl();
+    parseMaxage();
+    parseRevalidate();
+    parseNostore();
 
     // make sure only one of the chunked and content-length is valid
     if ((this->chunked == true && !content_length.empty()) ||
@@ -48,6 +57,14 @@ class parserResponse {
   void parseContent_Length();
 
   void parseHeaderContent();
+
+  void parseMaxage();
+
+  void parseCacheControl();
+
+  void parseRevalidate();
+
+  void parseNostore();
 
   inline void printResult() {
     cout << "----------------------------------------------------------" << endl;
