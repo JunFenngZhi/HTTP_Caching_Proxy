@@ -7,6 +7,8 @@
 #include <string>
 #include <unordered_map>
 
+#include "parserResponse.h"
+
 using namespace std;
 
 extern pthread_rwlock_t rwlock;
@@ -32,13 +34,15 @@ class cachedResponse {
       mustRevalidate(mustRevalidate),
       max_age(max_age) {}
 
+  cachedResponse() {}
+
   /*
     check whether cachedResponse is expired.
     return true if it is expired, else return false.
   */
   bool isExpired(time_t curTime) {
-    if(max_age = -1)  // no expire time
-        return false;
+    if (max_age = -1)  // no expire time
+      return false;
     if ((curTime - storedTime) > max_age) {
       return true;
     }
@@ -51,13 +55,13 @@ class cache {
   unordered_map<string, cachedResponse> list;
 
  public:
-  cache() {}
+  cache() { /*TODO: initialize RW_mutex*/
+  }
   ~cache() {}
-  void insertCache(const string & key, const cachedResponse & response);
-  bool findCache(const string & key, cachedResponse & target);
-  //bool revalidate(cachedResponse & target);
+  void insertCache(const string & key, const string & response, parserResponse & p);
+  bool findInCache(const string & key, cachedResponse & target);
   void cleanCache();
+  void deleteResponse(const string& key);
 };
-
 
 #endif

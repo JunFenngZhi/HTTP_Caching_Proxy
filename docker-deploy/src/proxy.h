@@ -42,6 +42,13 @@ class proxy {
                           clientInfo * client_info,
                           string & request,
                           const parserRequest & p);
+  static void getResponseFromServer(int server_fd,
+                                    const parserRequest & request_p,
+                                    clientInfo * client_info);
+  static void useCachedResponse(clientInfo * client_info, const string & response);
+  static bool revalidateCache(const cachedResponse & target,
+                              int server_fd,
+                              const parserRequest & request_p);
 };
 
 #endif

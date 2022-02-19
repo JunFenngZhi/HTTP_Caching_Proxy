@@ -119,3 +119,13 @@ void parserResponse::parseNostore() {
     }
   }
 }
+
+void parserResponse::parseEtag() {
+  this->E_tag = list["E-tag"];
+  //if does not exist, E_tag = ""
+}
+
+void parserResponse::parseLastModified() {
+  this->LastModified = list["Last-Modified"];
+  //if does not exist, LastModified = ""
+}

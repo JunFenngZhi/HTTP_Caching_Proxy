@@ -1,6 +1,7 @@
 #include "proxy.h"
 
 #include "assert.h"
+#include "cache.h"
 #include "exception.h"
 #include "function.h"
 #include "logger.h"
@@ -13,6 +14,7 @@ using namespace std;
 
 ofstream logfile("proxy.log");
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+cache my_cache;
 
 /*
     The main process of proxy. Create a listen socket to accpet connection from client.
@@ -190,7 +192,52 @@ void proxy::handle_CONNECT(int client_fd, int server_fd) {
 void proxy::handle_GET(clientInfo * client_info,
                        int server_fd,
                        const parserRequest & request_p) {
-  //request_p.printResult();
+  string request = request_p.request;
+  string URI = request_p.URI;
+
+  //TODO: search resource in cache
+  cachedResponse target;
+  if (my_cache.findInCache(URI, target) == true) {
+    if (target.mustRevalidate == true) {
+      // revalidate the cached response to check its validity
+      if (revalidateCache(target, server_fd, request_p) == true) {
+        useCachedResponse(client_info, target.response);
+        return;
+      }
+      else {
+        my_cache.deleteResponse(URI);
+        getResponseFromServer(server_fd, request_p, client_info);
+      }
+    }
+
+    // if targe is expired, erase it from the cache. Then Re-request response from the server
+    if (target.isExpired(time(0)) == true) {
+      my_cache.deleteResponse(URI);
+      getResponseFromServer(server_fd, request_p, client_info);
+    }
+    else {  // no expired, use the cache
+      useCachedResponse(client_info, target.response);
+      return;
+    }
+  }
+  else {  // resource is not found in cache
+    getResponseFromServer(server_fd, request_p, client_info);
+    return;
+  }
+}
+
+/*
+  proxy send request to server and get the response. proxy parse the response to decide
+  whether cache the "200 OK" response. proxy send back the response to client.
+
+  Parameter: 
+  server_fd : server socket
+  request_p : the parser of the request. (request may be updated compared with the origin client request)
+  client_info : store the client information
+*/
+void proxy::getResponseFromServer(int server_fd,
+                                  const parserRequest & request_p,
+                                  clientInfo * client_info) {
   string request = request_p.request;
 
   // send client request diretly to server
@@ -209,12 +256,11 @@ void proxy::handle_GET(clientInfo * client_info,
   string firstResponse(buffer.data(), len);
   parserResponse response_p;
   response_p.parse(firstResponse);
-  //response_p.printResult();
 
   //write info into logfile
   logger::printReceievedResponse(client_info, response_p.status_line, request_p.host);
 
-  // chunked mode. proxy recv packets from server and then directly forward to the client
+  // chunked mode. proxy recv packets from server and then directly forward to the client. do not cache
   if (response_p.chunked == true) {
     // send the first packet
     if (send(client_info->client_fd, firstResponse.c_str(), firstResponse.length(), 0) <
@@ -242,6 +288,9 @@ void proxy::handle_GET(clientInfo * client_info,
         0) {
       throw MyException("fail to send whole GET response to client.\n");
     }
+
+    // try to cache the response
+    my_cache.insertCache(request_p.URI, wholeMessage, response_p);
   }
 }
 
@@ -313,4 +362,60 @@ void proxy::handle_POST(int server_fd,
   if (send(client_info->client_fd, buffer.data(), len, 0) < 0) {
     throw MyException("fail to send POST message's response to client.\n");
   }
+}
+
+/*
+  send the cached Response to the client.
+*/
+void proxy::useCachedResponse(clientInfo * client_info, const string & response) {
+  if (send(client_info->client_fd, response.c_str(), response.length(), 0) < 0) {
+    throw MyException("Fail to send cached response to server.\n");
+  }
+}
+
+/*
+  send request to server to revalidate the cached response.
+  attach to E-tag segment and last modified segment to the request.
+  if server response 304 unmodified return true,  else return false.
+*/
+static bool revalidateCache(const cachedResponse & target,
+                            int server_fd,
+                            const parserRequest & request_p,
+                            clientInfo* client_info) {
+  if(target.E_tag == "" && target.last_modified == "")
+    return true;   
+
+  // modify origin request and add segment to the end of header                             
+  string new_request = request_p.request;
+  if (target.E_tag != "") {
+    string add_etag = "If-None-Match: " + target.E_tag + "\r\n";
+    new_request.insert(request_p.head_length-2, add_etag.c_str());
+  }
+  else if (target.last_modified != "") {
+    string add_modified = "If-Modified-Since: " + target.last_modified + "\r\n";
+    new_request.insert(request_p.head_length-2, add_modified.c_str());
+  }
+
+  // send revalidate request to server
+  if(send(server_fd,new_request.c_str(),new_request.length(),0) < 0){
+    throw MyException("fail to send revalidate request to server.\n");
+  }
+  
+  // recv result from server
+  vector<char> buffer(MAX_LENGTH, 0);
+  int len = recv(server_fd, &(buffer.data()[0]), MAX_LENGTH,0); 
+  if(len < 0){
+    cerr<<client_info->Id<<": fail to recv revalidaion result from server.\n";
+    return false;
+  }
+
+  // check result
+  string res(buffer.data(), len);
+  if(res.find("304") != std::string::npos){
+    return true;
+  }
+  return false;
+
+
+
 }
