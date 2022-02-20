@@ -55,13 +55,12 @@ class cache {
   unordered_map<string, cachedResponse> list;
 
  public:
-  cache() { /*TODO: initialize RW_mutex*/
-  }
+  cache() {}
   ~cache() {}
-  void insertCache(const string & key, const string & response, parserResponse & p);
+  void insertCache(const string & key, const string & response, const parserResponse & p);
   bool findInCache(const string & key, cachedResponse & target);
   void cleanCache();
-  void deleteResponse(const string& key);
+  void deleteResponse(const string & key);
 };
 
 #endif

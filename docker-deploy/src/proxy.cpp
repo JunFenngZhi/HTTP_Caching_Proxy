@@ -1,7 +1,7 @@
 #include "proxy.h"
 
-#include "assert.h"
-#include "cache.h"
+#include <assert.h>
+
 #include "exception.h"
 #include "function.h"
 #include "logger.h"
@@ -195,18 +195,19 @@ void proxy::handle_GET(clientInfo * client_info,
   string request = request_p.request;
   string URI = request_p.URI;
 
-  //TODO: search resource in cache
   cachedResponse target;
-  if (my_cache.findInCache(URI, target) == true) {
+  if (my_cache.findInCache(URI, target) == true) {  // find resource in cache
+    // resource need to revalidate
     if (target.mustRevalidate == true) {
       // revalidate the cached response to check its validity
-      if (revalidateCache(target, server_fd, request_p) == true) {
+      if (revalidateCache(target, server_fd, request_p, client_info) == true) {
         useCachedResponse(client_info, target.response);
         return;
       }
       else {
         my_cache.deleteResponse(URI);
         getResponseFromServer(server_fd, request_p, client_info);
+        return;
       }
     }
 
@@ -217,12 +218,10 @@ void proxy::handle_GET(clientInfo * client_info,
     }
     else {  // no expired, use the cache
       useCachedResponse(client_info, target.response);
-      return;
     }
   }
   else {  // resource is not found in cache
     getResponseFromServer(server_fd, request_p, client_info);
-    return;
   }
 }
 
@@ -284,8 +283,7 @@ void proxy::getResponseFromServer(int server_fd,
     string wholeMessage;
     getWholeMessage(
         len, contentLength, headerSize, server_fd, firstResponse, wholeMessage);
-    if (send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0) <
-        0) {
+    if (send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0) < 0) {
       throw MyException("fail to send whole GET response to client.\n");
     }
 
@@ -378,44 +376,41 @@ void proxy::useCachedResponse(clientInfo * client_info, const string & response)
   attach to E-tag segment and last modified segment to the request.
   if server response 304 unmodified return true,  else return false.
 */
-static bool revalidateCache(const cachedResponse & target,
+bool proxy::revalidateCache(const cachedResponse & target,
                             int server_fd,
                             const parserRequest & request_p,
-                            clientInfo* client_info) {
-  if(target.E_tag == "" && target.last_modified == "")
-    return true;   
+                            clientInfo * client_info) {
+  if (target.E_tag == "" && target.last_modified == "")
+    return true;
 
-  // modify origin request and add segment to the end of header                             
+  // modify origin request and add segment to the end of header
   string new_request = request_p.request;
   if (target.E_tag != "") {
     string add_etag = "If-None-Match: " + target.E_tag + "\r\n";
-    new_request.insert(request_p.head_length-2, add_etag.c_str());
+    new_request.insert(request_p.head_length - 2, add_etag.c_str());
   }
   else if (target.last_modified != "") {
     string add_modified = "If-Modified-Since: " + target.last_modified + "\r\n";
-    new_request.insert(request_p.head_length-2, add_modified.c_str());
+    new_request.insert(request_p.head_length - 2, add_modified.c_str());
   }
 
   // send revalidate request to server
-  if(send(server_fd,new_request.c_str(),new_request.length(),0) < 0){
+  if (send(server_fd, new_request.c_str(), new_request.length(), 0) < 0) {
     throw MyException("fail to send revalidate request to server.\n");
   }
-  
+
   // recv result from server
   vector<char> buffer(MAX_LENGTH, 0);
-  int len = recv(server_fd, &(buffer.data()[0]), MAX_LENGTH,0); 
-  if(len < 0){
-    cerr<<client_info->Id<<": fail to recv revalidaion result from server.\n";
+  int len = recv(server_fd, &(buffer.data()[0]), MAX_LENGTH, 0);
+  if (len < 0) {
+    cerr << client_info->Id << ": fail to recv revalidaion result from server.\n";
     return false;
   }
 
   // check result
   string res(buffer.data(), len);
-  if(res.find("304") != std::string::npos){
+  if (res.find("304") != std::string::npos) {
     return true;
   }
   return false;
-
-
-
 }

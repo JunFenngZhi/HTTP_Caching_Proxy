@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 
+#include "cache.h"
 #include "clientInfo.h"
 #include "parserRequest.h"
 
@@ -48,7 +49,8 @@ class proxy {
   static void useCachedResponse(clientInfo * client_info, const string & response);
   static bool revalidateCache(const cachedResponse & target,
                               int server_fd,
-                              const parserRequest & request_p);
+                              const parserRequest & request_p,
+                              clientInfo * client_info);
 };
 
 #endif
