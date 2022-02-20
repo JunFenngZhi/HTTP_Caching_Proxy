@@ -19,7 +19,7 @@ extern pthread_mutex_t mutex;
 
 class proxy {
  private:
-  string port;  //server port number
+  string port;  //proxy port number
 
  public:
   proxy(const char * portNum) : port(portNum) {}
@@ -51,6 +51,7 @@ class proxy {
                               int server_fd,
                               const parserRequest & request_p,
                               clientInfo * client_info);
+  static void* cleanCache(void* ptr);
 };
 
 #endif

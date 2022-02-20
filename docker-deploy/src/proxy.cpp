@@ -36,6 +36,11 @@ void proxy::run() {
     string clientIp;
     int client_fd;
 
+    if (clientId % 200 == 0 && clientId != 0) {
+      pthread_t thread;
+      pthread_create(&thread, NULL, cleanCache, NULL);
+    }
+
     try {
       client_fd = serverAcceptConnection(server_fd, clientIp);
     }
@@ -283,7 +288,8 @@ void proxy::getResponseFromServer(int server_fd,
     string wholeMessage;
     getWholeMessage(
         len, contentLength, headerSize, server_fd, firstResponse, wholeMessage);
-    if (send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0) < 0) {
+    if (send(client_info->client_fd, wholeMessage.c_str(), wholeMessage.length(), 0) <
+        0) {
       throw MyException("fail to send whole GET response to client.\n");
     }
 
@@ -413,4 +419,13 @@ bool proxy::revalidateCache(const cachedResponse & target,
     return true;
   }
   return false;
+}
+
+
+/*
+  clean the Cache, delete expired cached responsed
+*/
+void* proxy::cleanCache(void* ptr){
+  my_cache.cleanCache();
+  return nullptr;
 }

@@ -1,35 +1,769 @@
-0: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
-0: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-1: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
-2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
-1: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
-3: "CONNECT www.facebook.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:44 2022
-2: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
-3: Requesting "CONNECT www.facebook.com:443 HTTP/1.1" from www.facebook.com
-4: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:45 2022
-4: Requesting "CONNECT www.youtube.com:443 HTTP/1.1" from www.youtube.com
-5: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:45 2022
-5: Requesting "CONNECT i.ytimg.com:443 HTTP/1.1" from i.ytimg.com
-6: "CONNECT accounts.google.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:45 2022
-6: Requesting "CONNECT accounts.google.com:443 HTTP/1.1" from accounts.google.com
-7: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:46 2022
-7: Requesting "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from googleads.g.doubleclick.net
-9: "CONNECT www.gstatic.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:47 2022
-9: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
-10: "CONNECT www.google.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:47 2022
-10: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
-11: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:47 2022
-11: Requesting "CONNECT yt3.ggpht.com:443 HTTP/1.1" from yt3.ggpht.com
-12: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 98.24.61.124 @ Fri Feb 18 16:26:48 2022
-12: Requesting "CONNECT static.doubleclick.net:443 HTTP/1.1" from static.doubleclick.net
-8: Invalid request. recv return negative or zero.
-13: Invalid request. recv return negative or zero.
-1: Tunnel closed
-0: Tunnel closed
+0: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+1: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+2: "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+0: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+1: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+1: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+3: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+2: Requesting "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1" from content-signature-2.cdn.mozilla.net
+3: Requesting "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from firefox.settings.services.mozilla.com
+4: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+5: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+5: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
+7: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+6: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+4: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+5: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+6: Requesting "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from firefox.settings.services.mozilla.com
+7: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+8: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+8: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
 6: Tunnel closed
-5: Tunnel closed
-9: Tunnel closed
-10: Tunnel closed
-11: Tunnel closed
+9: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:02 2022
+10: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+9: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+11: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+12: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+11: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+12: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+10: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+4: Tunnel closed
+13: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+15: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+14: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+16: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+14: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+13: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+16: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+15: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+17: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
 12: Tunnel closed
+18: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:03 2022
+17: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+18: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+15: Tunnel closed
+14: Tunnel closed
+16: Tunnel closed
+19: "CONNECT shavar.services.mozilla.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:04 2022
+19: Requesting "CONNECT shavar.services.mozilla.com:443 HTTP/1.1" from shavar.services.mozilla.com
+20: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:04 2022
+20: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+19: Tunnel closed
+21: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:06 2022
+24: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:06 2022
+22: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:06 2022
+22: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+24: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+21: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+24:Error : chunked and content_length is error.
+
+22:Error : chunked and content_length is error.
+
+21:Error : chunked and content_length is error.
+
+23: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:07 2022
+25: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:07 2022
+26: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:07 2022
+25: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+23: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+26: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+23:Error : chunked and content_length is error.
+
+25:Error : chunked and content_length is error.
+
+26:Error : chunked and content_length is error.
+
+27: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:08 2022
+28: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:08 2022
+29: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:08 2022
+27: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+28: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+29: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+28:Error : chunked and content_length is error.
+
+27:Error : chunked and content_length is error.
+
+30: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:09 2022
+31: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:09 2022
+29:Error : chunked and content_length is error.
+
+32: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:09 2022
+30: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+31: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+32: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+30:Error : chunked and content_length is error.
+
+31:Error : chunked and content_length is error.
+
+33: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:10 2022
+34: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:10 2022
+32:Error : chunked and content_length is error.
+
+35: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:10 2022
+34: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+33: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+34:Error : chunked and content_length is error.
+
+33:Error : chunked and content_length is error.
+
+37: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:11 2022
+36: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:11 2022
+37: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+36: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+35: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+37:Error : chunked and content_length is error.
+
+36:Error : chunked and content_length is error.
+
+38: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:12 2022
+39: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:12 2022
+35:Error : chunked and content_length is error.
+
+40: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:12 2022
+38: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+39: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+40: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+38:Error : chunked and content_length is error.
+
+39:Error : chunked and content_length is error.
+
+41: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:12 2022
+42: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:12 2022
+40:Error : chunked and content_length is error.
+
+41: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+42: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+43: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:13 2022
+41:Error : chunked and content_length is error.
+
+42:Error : chunked and content_length is error.
+
+44: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:13 2022
+43: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+45: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:13 2022
+44: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+43:Error : chunked and content_length is error.
+
+45: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+46: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:13 2022
+44:Error : chunked and content_length is error.
+
+45:Error : chunked and content_length is error.
+
+48: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:14 2022
+47: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:14 2022
+46: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+46:Error : chunked and content_length is error.
+
+47: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+48: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+49: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:14 2022
+47:Error : chunked and content_length is error.
+
+48:Error : chunked and content_length is error.
+
+49: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+49:Error : chunked and content_length is error.
+
+50: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:15 2022
+50: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+50:Error : chunked and content_length is error.
+
+51: "GET http://s13.cnzz.com/stat.php?id=5791829&show=pic HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:15 2022
+51: Requesting "GET http://s13.cnzz.com/stat.php?id=5791829&show=pic HTTP/1.1" from s13.cnzz.com
+51: Received "HTTP/1.1 200 OK" from s13.cnzz.com
+52: "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:17 2022
+52: Requesting "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from c.cnzz.com
+52: Received "HTTP/1.1 200 OK" from c.cnzz.com
+53: "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=1061182562 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:18 2022
+54: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=zh-cn&ntime=1645223445&cnzz_eid=1800016525-1645223445-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1707x960&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0ef5eb0e344-00c153e00150fc-4c3e227d-e1000-17f0ef5eb0f417&h=1&rnd=1597196929 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:18 2022
+53: Requesting "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=1061182562 HTTP/1.1" from cnzz.mmstat.com
+53: Received "HTTP/1.1 302 Found" from cnzz.mmstat.com
+55: "GET http://pcookie.cnzz.com/app.gif?&cna=MwyXGi9pf30CAUOfWA0IHVE1 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:18 2022
+55: Requesting "GET http://pcookie.cnzz.com/app.gif?&cna=MwyXGi9pf30CAUOfWA0IHVE1 HTTP/1.1" from pcookie.cnzz.com
+54: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=zh-cn&ntime=1645223445&cnzz_eid=1800016525-1645223445-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1707x960&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f0ef5eb0e344-00c153e00150fc-4c3e227d-e1000-17f0ef5eb0f417&h=1&rnd=1597196929 HTTP/1.1" from z7.cnzz.com
+55: Received "HTTP/1.1 200 OK" from pcookie.cnzz.com
+54: Received "HTTP/1.1 200 OK" from z7.cnzz.com
+56: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:23 2022
+56: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+56:Error : chunked and content_length is error.
+
+57: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:23 2022
+57: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+57:Error : chunked and content_length is error.
+
+58: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:24 2022
+58: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+58:Error : chunked and content_length is error.
+
+59: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:25 2022
+59: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+59:Error : chunked and content_length is error.
+
+60: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:26 2022
+60: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+60:Error : chunked and content_length is error.
+
+61: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:26 2022
+61: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+61:Error : chunked and content_length is error.
+
+62: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:27 2022
+62: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+62:Error : chunked and content_length is error.
+
+63: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:28 2022
+63: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+63:Error : chunked and content_length is error.
+
+64: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:28 2022
+64: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+64:Error : chunked and content_length is error.
+
+65: "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:29 2022
+65: Requesting "GET http://www.cad.zju.edu.cn/zhongwen.html HTTP/1.1" from www.cad.zju.edu.cn
+65:Error : chunked and content_length is error.
+
+66: "CONNECT www.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:35 2022
+66: Requesting "CONNECT www.amazon.com:443 HTTP/1.1" from www.amazon.com
+67: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:35 2022
+68: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:35 2022
+69: "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:35 2022
+67: Requesting "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from images-na.ssl-images-amazon.com
+68: Requesting "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from images-na.ssl-images-amazon.com
+69: Requesting "CONNECT images-na.ssl-images-amazon.com:443 HTTP/1.1" from images-na.ssl-images-amazon.com
+68: Tunnel closed
+69: Tunnel closed
+70: "CONNECT fls-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+74: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+75: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+72: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+73: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+74: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+75: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+72: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+73: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+76: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+77: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+78: "CONNECT m.media-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+76: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+77: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+70: Requesting "CONNECT fls-na.amazon.com:443 HTTP/1.1" from fls-na.amazon.com
+78: Requesting "CONNECT m.media-amazon.com:443 HTTP/1.1" from m.media-amazon.com
+74: Tunnel closed
+76: Tunnel closed
+77: Tunnel closed
+79: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+73: Tunnel closed
+75: Tunnel closed
+79: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+80: "CONNECT assoc-na.associates-amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+82: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+81: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+83: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+80: Requesting "CONNECT assoc-na.associates-amazon.com:443 HTTP/1.1" from assoc-na.associates-amazon.com
+82: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+81: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+83: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+84: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+84: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+85: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+85: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+86: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+87: "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+87: Requesting "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from aax-us-east-retail-direct.amazon.com
+86: Requesting "CONNECT aax-us-east-retail-direct.amazon.com:443 HTTP/1.1" from aax-us-east-retail-direct.amazon.com
+88: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+89: "CONNECT completion.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+88: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+89: Requesting "CONNECT completion.amazon.com:443 HTTP/1.1" from completion.amazon.com
+90: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+91: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+92: "CONNECT player.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+93: "CONNECT d2in0p32vp1pij.cloudfront.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+90: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+94: "CONNECT d23tl967axkois.cloudfront.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:36 2022
+91: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+88: Tunnel closed
+92: Requesting "CONNECT player.live-video.net:443 HTTP/1.1" from player.live-video.net
+93: Requesting "CONNECT d2in0p32vp1pij.cloudfront.net:443 HTTP/1.1" from d2in0p32vp1pij.cloudfront.net
+94: Requesting "CONNECT d23tl967axkois.cloudfront.net:443 HTTP/1.1" from d23tl967axkois.cloudfront.net
+97: "CONNECT player.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+97: Requesting "CONNECT player.live-video.net:443 HTTP/1.1" from player.live-video.net
+98: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+98: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+99: "CONNECT unagi.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+99: Requesting "CONNECT unagi.amazon.com:443 HTTP/1.1" from unagi.amazon.com
+100: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+102: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+101: "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+102: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+100: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+101: Requesting "CONNECT aax-us-iad.amazon.com:443 HTTP/1.1" from aax-us-iad.amazon.com
+103: "CONNECT player.stats.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:37 2022
+104: "CONNECT 4b64d6fa612f.us-east-1.playback.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+104: Requesting "CONNECT 4b64d6fa612f.us-east-1.playback.live-video.net:443 HTTP/1.1" from 4b64d6fa612f.us-east-1.playback.live-video.net
+103: Requesting "CONNECT player.stats.live-video.net:443 HTTP/1.1" from player.stats.live-video.net
+105: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+106: "CONNECT lciapi.ninthdecimal.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+108: "CONNECT ads.samba.tv:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+107: "CONNECT www.imdb.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+109: "CONNECT usersync.samplicio.us:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+110: "CONNECT pi.ispot.tv:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+111: "CONNECT t.myvisualiq.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+112: "CONNECT mwzeom.zeotap.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+105: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+109: Requesting "CONNECT usersync.samplicio.us:443 HTTP/1.1" from usersync.samplicio.us
+108: Requesting "CONNECT ads.samba.tv:443 HTTP/1.1" from ads.samba.tv
+107: Requesting "CONNECT www.imdb.com:443 HTTP/1.1" from www.imdb.com
+112: Requesting "CONNECT mwzeom.zeotap.com:443 HTTP/1.1" from mwzeom.zeotap.com
+111: Requesting "CONNECT t.myvisualiq.net:443 HTTP/1.1" from t.myvisualiq.net
+110: Requesting "CONNECT pi.ispot.tv:443 HTTP/1.1" from pi.ispot.tv
+106: Requesting "CONNECT lciapi.ninthdecimal.com:443 HTTP/1.1" from lciapi.ninthdecimal.com
+113: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+113: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+114: "CONNECT player.stats.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+115: "CONNECT video-weaver.iad03.hls.live-video.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+115: Requesting "CONNECT video-weaver.iad03.hls.live-video.net:443 HTTP/1.1" from video-weaver.iad03.hls.live-video.net
+114: Requesting "CONNECT player.stats.live-video.net:443 HTTP/1.1" from player.stats.live-video.net
+116: "POST http://ocsp.godaddy.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+117: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+118: "POST http://ocsp.godaddy.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+119: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+120: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:38 2022
+117: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+119: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+120: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+116: Requesting "POST http://ocsp.godaddy.com/ HTTP/1.1" from ocsp.godaddy.com
+118: Requesting "POST http://ocsp.godaddy.com/ HTTP/1.1" from ocsp.godaddy.com
+114: Tunnel closed
+123: "CONNECT dsum-sec.casalemedia.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+121: "CONNECT tags.bluekai.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+122: "CONNECT ups.analytics.yahoo.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+125: "CONNECT x.bidswitch.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+124: "CONNECT amazon.partners.tremorhub.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+126: "CONNECT aa.agkn.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+127: "CONNECT pixel.advertising.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+128: "CONNECT cms.analytics.yahoo.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+130: "CONNECT ads.stickyadstv.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+129: "CONNECT analytics.twitter.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+132: "CONNECT pixel.rubiconproject.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+133: "CONNECT dpm.demdex.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+131: "CONNECT beacon.krxd.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+124: Requesting "CONNECT amazon.partners.tremorhub.com:443 HTTP/1.1" from amazon.partners.tremorhub.com
+122: Requesting "CONNECT ups.analytics.yahoo.com:443 HTTP/1.1" from ups.analytics.yahoo.com
+127: Requesting "CONNECT pixel.advertising.com:443 HTTP/1.1" from pixel.advertising.com
+123: Requesting "CONNECT dsum-sec.casalemedia.com:443 HTTP/1.1" from dsum-sec.casalemedia.com
+125: Requesting "CONNECT x.bidswitch.net:443 HTTP/1.1" from x.bidswitch.net
+134: "CONNECT odr.mookie1.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+121: Requesting "CONNECT tags.bluekai.com:443 HTTP/1.1" from tags.bluekai.com
+133: Requesting "CONNECT dpm.demdex.net:443 HTTP/1.1" from dpm.demdex.net
+131: Requesting "CONNECT beacon.krxd.net:443 HTTP/1.1" from beacon.krxd.net
+132: Requesting "CONNECT pixel.rubiconproject.com:443 HTTP/1.1" from pixel.rubiconproject.com
+126: Requesting "CONNECT aa.agkn.com:443 HTTP/1.1" from aa.agkn.com
+128: Requesting "CONNECT cms.analytics.yahoo.com:443 HTTP/1.1" from cms.analytics.yahoo.com
+135: "CONNECT c1.adform.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+136: "CONNECT px.surveywall-api.survata.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+137: "CONNECT sync.search.spotxchange.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+138: "CONNECT bs.serving-sys.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+130: Requesting "CONNECT ads.stickyadstv.com:443 HTTP/1.1" from ads.stickyadstv.com
+134: Requesting "CONNECT odr.mookie1.com:443 HTTP/1.1" from odr.mookie1.com
+139: "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+136: Requesting "CONNECT px.surveywall-api.survata.com:443 HTTP/1.1" from px.surveywall-api.survata.com
+129: Requesting "CONNECT analytics.twitter.com:443 HTTP/1.1" from analytics.twitter.com
+140: "CONNECT usermatch.krxd.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+135: Requesting "CONNECT c1.adform.net:443 HTTP/1.1" from c1.adform.net
+137: Requesting "CONNECT sync.search.spotxchange.com:443 HTTP/1.1" from sync.search.spotxchange.com
+124: Tunnel closed
+125: Tunnel closed
+126: Tunnel closed
+123: Tunnel closed
+127: Tunnel closed
+121: Tunnel closed
+135: Tunnel closed
+122: Tunnel closed
+137: Tunnel closed
+128: Tunnel closed
+132: Tunnel closed
+133: Tunnel closed
+130: Tunnel closed
+131: Tunnel closed
+136: Tunnel closed
+129: Tunnel closed
+134: Tunnel closed
+138: Requesting "CONNECT bs.serving-sys.com:443 HTTP/1.1" from bs.serving-sys.com
+138: Tunnel closed
+139: Requesting "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from cm.g.doubleclick.net
+139: Tunnel closed
+141: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+140: Requesting "CONNECT usermatch.krxd.net:443 HTTP/1.1" from usermatch.krxd.net
+140: Tunnel closed
+142: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+143: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+143: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+142: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+141: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+95: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+95: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+144: "CONNECT d1pd0pmhst5qqh.cloudfront.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:39 2022
+144: Requesting "CONNECT d1pd0pmhst5qqh.cloudfront.net:443 HTTP/1.1" from d1pd0pmhst5qqh.cloudfront.net
+143: Tunnel closed
+96: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+96: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+145: "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+145: Requesting "CONNECT unagi-na.amazon.com:443 HTTP/1.1" from unagi-na.amazon.com
+147: "CONNECT tags.bluekai.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+148: "CONNECT x.bidswitch.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+149: "CONNECT pixel.advertising.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+150: "CONNECT aa.agkn.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+155: "CONNECT dpm.demdex.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+154: "CONNECT ads.stickyadstv.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+151: "CONNECT cms.analytics.yahoo.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+153: "CONNECT analytics.twitter.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+152: "CONNECT amazon.partners.tremorhub.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+156: "CONNECT odr.mookie1.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+149: Requesting "CONNECT pixel.advertising.com:443 HTTP/1.1" from pixel.advertising.com
+152: Requesting "CONNECT amazon.partners.tremorhub.com:443 HTTP/1.1" from amazon.partners.tremorhub.com
+148: Requesting "CONNECT x.bidswitch.net:443 HTTP/1.1" from x.bidswitch.net
+155: Requesting "CONNECT dpm.demdex.net:443 HTTP/1.1" from dpm.demdex.net
+147: Requesting "CONNECT tags.bluekai.com:443 HTTP/1.1" from tags.bluekai.com
+156: Requesting "CONNECT odr.mookie1.com:443 HTTP/1.1" from odr.mookie1.com
+160: "CONNECT c1.adform.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+159: "CONNECT bs.serving-sys.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+162: "CONNECT sb.scorecardresearch.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+158: "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+157: "CONNECT px.surveywall-api.survata.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+161: "CONNECT sync.search.spotxchange.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+163: "CONNECT us-u.openx.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:40 2022
+150: Requesting "CONNECT aa.agkn.com:443 HTTP/1.1" from aa.agkn.com
+164: "CONNECT ssum-sec.casalemedia.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+151: Requesting "CONNECT cms.analytics.yahoo.com:443 HTTP/1.1" from cms.analytics.yahoo.com
+165: "CONNECT uipglob.semasio.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+158: Requesting "CONNECT cm.g.doubleclick.net:443 HTTP/1.1" from cm.g.doubleclick.net
+159: Requesting "CONNECT bs.serving-sys.com:443 HTTP/1.1" from bs.serving-sys.com
+163: Requesting "CONNECT us-u.openx.net:443 HTTP/1.1" from us-u.openx.net
+157: Requesting "CONNECT px.surveywall-api.survata.com:443 HTTP/1.1" from px.surveywall-api.survata.com
+166: "CONNECT ib.adnxs.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+162: Requesting "CONNECT sb.scorecardresearch.com:443 HTTP/1.1" from sb.scorecardresearch.com
+161: Requesting "CONNECT sync.search.spotxchange.com:443 HTTP/1.1" from sync.search.spotxchange.com
+160: Requesting "CONNECT c1.adform.net:443 HTTP/1.1" from c1.adform.net
+164: Requesting "CONNECT ssum-sec.casalemedia.com:443 HTTP/1.1" from ssum-sec.casalemedia.com
+165: Requesting "CONNECT uipglob.semasio.net:443 HTTP/1.1" from uipglob.semasio.net
+153: Requesting "CONNECT analytics.twitter.com:443 HTTP/1.1" from analytics.twitter.com
+167: "CONNECT loadus.exelator.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+168: "CONNECT token.rubiconproject.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+154: Requesting "CONNECT ads.stickyadstv.com:443 HTTP/1.1" from ads.stickyadstv.com
+166: Requesting "CONNECT ib.adnxs.com:443 HTTP/1.1" from ib.adnxs.com
+167: Requesting "CONNECT loadus.exelator.com:443 HTTP/1.1" from loadus.exelator.com
+168: Requesting "CONNECT token.rubiconproject.com:443 HTTP/1.1" from token.rubiconproject.com
+171: "CONNECT sync.taboola.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+169: "CONNECT image6.pubmatic.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+170: "CONNECT www.facebook.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+172: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+71: Invalid request. recv return negative or zero.
+173: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+169: Requesting "CONNECT image6.pubmatic.com:443 HTTP/1.1" from image6.pubmatic.com
+170: Requesting "CONNECT www.facebook.com:443 HTTP/1.1" from www.facebook.com
+172: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+171: Requesting "CONNECT sync.taboola.com:443 HTTP/1.1" from sync.taboola.com
+175: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+173: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+175: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+177: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+177: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+176: "POST http://ocsp.sectigo.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+174: "POST http://status.rapidssl.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+178: "POST http://status.geotrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+174: Requesting "POST http://status.rapidssl.com/ HTTP/1.1" from status.rapidssl.com
+176: Requesting "POST http://ocsp.sectigo.com/ HTTP/1.1" from ocsp.sectigo.com
+150: Tunnel closed
+178: Requesting "POST http://status.geotrust.com/ HTTP/1.1" from status.geotrust.com
+179: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+181: "POST http://status.geotrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+180: "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+179: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+182: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+181: Requesting "POST http://status.geotrust.com/ HTTP/1.1" from status.geotrust.com
+183: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+182: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+180: Requesting "POST http://ocsp.globalsign.com/gsgccr3dvtlsca2020 HTTP/1.1" from ocsp.globalsign.com
+184: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+183: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+185: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+184: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+186: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+187: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+185: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+188: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+189: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+187: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+186: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+188: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+189: Requesting "POST http://ocsp.digicert.com/ HTTP/1.1" from ocsp.digicert.com
+190: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+191: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+190: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+191: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+192: "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:41 2022
+192: Requesting "CONNECT s.amazon-adsystem.com:443 HTTP/1.1" from s.amazon-adsystem.com
+193: "CONNECT lm.serving-sys.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:42 2022
+193: Requesting "CONNECT lm.serving-sys.com:443 HTTP/1.1" from lm.serving-sys.com
+194: "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:42 2022
+194: Requesting "POST http://ocsp.sca1b.amazontrust.com/ HTTP/1.1" from ocsp.sca1b.amazontrust.com
+115: Tunnel closed
+193: Tunnel closed
+146: Invalid request. recv return negative or zero.
+196: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+195: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+197: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+198: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+199: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+200: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+201: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+197: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+195: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+196: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+198: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+199: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+200: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+201: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+200: Tunnel closed
+195: Tunnel closed
+199: Tunnel closed
+196: Tunnel closed
+198: Tunnel closed
+197: Tunnel closed
+202: "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+203: "CONNECT facebook.com:443 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:46 2022
+202: Requesting "CONNECT static.xx.fbcdn.net:443 HTTP/1.1" from static.xx.fbcdn.net
+203: Requesting "CONNECT facebook.com:443 HTTP/1.1" from facebook.com
+157: Tunnel closed
+166: Tunnel closed
+204: "GET http://httpbin.org/forms/post HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:53 2022
+204: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
+204: Received "HTTP/1.1 200 OK" from httpbin.org
+205: "GET http://httpbin.org/favicon.ico HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:53 2022
+205: Requesting "GET http://httpbin.org/favicon.ico HTTP/1.1" from httpbin.org
+205: Received "HTTP/1.1 404 NOT FOUND" from httpbin.org
+104: Tunnel closed
+207: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:58 2022
+206: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:58 2022
+208: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:58 2022
+206: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+207: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+208: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+206:Error : chunked and content_length is error.
+
+207:Error : chunked and content_length is error.
+
+208:Error : chunked and content_length is error.
+
+209: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:59 2022
+210: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:59 2022
+211: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:59 2022
+210: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+209: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+211: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+210:Error : chunked and content_length is error.
+
+209:Error : chunked and content_length is error.
+
+211:Error : chunked and content_length is error.
+
+213: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:59 2022
+212: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:25:59 2022
+214: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:00 2022
+213: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+212: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+214: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+213:Error : chunked and content_length is error.
+
+212:Error : chunked and content_length is error.
+
+214:Error : chunked and content_length is error.
+
+215: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:00 2022
+216: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:00 2022
+217: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:00 2022
+216: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+215: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+217: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+215:Error : chunked and content_length is error.
+
+216:Error : chunked and content_length is error.
+
+218: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:01 2022
+219: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:01 2022
+217:Error : chunked and content_length is error.
+
+220: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:01 2022
+218: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+219: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+220: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+218:Error : chunked and content_length is error.
+
+219:Error : chunked and content_length is error.
+
+222: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:02 2022
+221: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:02 2022
+220:Error : chunked and content_length is error.
+
+223: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:02 2022
+222: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+221: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+224: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:02 2022
+223: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+224: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+224: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+222:Error : chunked and content_length is error.
+
+221:Error : chunked and content_length is error.
+
+225: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:02 2022
+226: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:02 2022
+223:Error : chunked and content_length is error.
+
+227: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:03 2022
+228: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:03 2022
+228: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
+225: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+228: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+226: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+227: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+225:Error : chunked and content_length is error.
+
+226:Error : chunked and content_length is error.
+
+229: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:03 2022
+230: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:03 2022
+227:Error : chunked and content_length is error.
+
+231: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:03 2022
+229: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+230: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+231: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+229:Error : chunked and content_length is error.
+
+230:Error : chunked and content_length is error.
+
+232: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:04 2022
+233: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:04 2022
+231:Error : chunked and content_length is error.
+
+234: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:04 2022
+232: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+233: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+234: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+232:Error : chunked and content_length is error.
+
+233:Error : chunked and content_length is error.
+
+235: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:05 2022
+236: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:05 2022
+234:Error : chunked and content_length is error.
+
+237: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:05 2022
+235: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zd.css HTTP/1.1" from www.cad.zju.edu.cn
+236: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+237: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+235:Error : chunked and content_length is error.
+
+236:Error : chunked and content_length is error.
+
+237:Error : chunked and content_length is error.
+
+238: "GET http://s13.cnzz.com/stat.php?id=5791829&show=pic HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:05 2022
+238: Requesting "GET http://s13.cnzz.com/stat.php?id=5791829&show=pic HTTP/1.1" from s13.cnzz.com
+239: "GET http://www.cad.zju.edu.cn/Latestnews/xueshubaogao/745.html HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:07 2022
+239: Requesting "GET http://www.cad.zju.edu.cn/Latestnews/xueshubaogao/745.html HTTP/1.1" from www.cad.zju.edu.cn
+239: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
+240: "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:08 2022
+241: "GET http://www.cad.zju.edu.cn/bannerbg.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:08 2022
+242: "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:08 2022
+244: "GET http://www.cad.zju.edu.cn/templets/default/js/cenav.js HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:08 2022
+243: "GET http://www.cad.zju.edu.cn/plus/count.php?view=yes&aid=745&mid=5 HTTP/1.1" from 174.109.111.243 @ Sun Feb 20 10:26:08 2022
+243: Requesting "GET http://www.cad.zju.edu.cn/plus/count.php?view=yes&aid=745&mid=5 HTTP/1.1" from www.cad.zju.edu.cn
+244: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/cenav.js HTTP/1.1" from www.cad.zju.edu.cn
+240: Requesting "GET http://www.cad.zju.edu.cn/templets/default/js/mm_menu.js HTTP/1.1" from www.cad.zju.edu.cn
+242: Requesting "GET http://www.cad.zju.edu.cn/templets/default/zdcss/zdcss.css HTTP/1.1" from www.cad.zju.edu.cn
+241: Requesting "GET http://www.cad.zju.edu.cn/bannerbg.js HTTP/1.1" from www.cad.zju.edu.cn
+240:Error : chunked and content_length is error.
+
+242:Error : chunked and content_length is error.
+
+241: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
+243: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
+244: Received "HTTP/1.1 200 OK" from www.cad.zju.edu.cn
+160: Tunnel closed
+161: Tunnel closed
+246: Invalid request. recv return negative or zero.
+245: Invalid request. recv return negative or zero.
+170: Tunnel closed
+167: Tunnel closed
+168: Tunnel closed
+203: Tunnel closed
+165: Tunnel closed
+169: Tunnel closed
+164: Tunnel closed
+154: Tunnel closed
+147: Tunnel closed
+149: Tunnel closed
+151: Tunnel closed
+155: Tunnel closed
+153: Tunnel closed
+202: Tunnel closed
+152: Tunnel closed
+148: Tunnel closed
+108: Tunnel closed
+106: Tunnel closed
+171: Tunnel closed
+103: Tunnel closed
+158: Tunnel closed
+162: Tunnel closed
+163: Tunnel closed
+159: Tunnel closed
+109: Tunnel closed
+107: Tunnel closed
+156: Tunnel closed
+144: Tunnel closed
+110: Tunnel closed
+98: Tunnel closed
+145: Tunnel closed
+111: Tunnel closed
+190: Tunnel closed
+112: Tunnel closed
+191: Tunnel closed
+99: Tunnel closed
+82: Tunnel closed
+86: Tunnel closed
+89: Tunnel closed
+93: Tunnel closed
+91: Tunnel closed
+94: Tunnel closed
+67: Tunnel closed
+3: Tunnel closed
+66: Tunnel closed
+7: Tunnel closed
+72: Tunnel closed
+83: Tunnel closed
+96: Tunnel closed
+87: Tunnel closed
+80: Tunnel closed
 2: Tunnel closed
+84: Tunnel closed
+81: Tunnel closed
+90: Tunnel closed
+95: Tunnel closed
+11: Tunnel closed
+201: Tunnel closed
+192: Tunnel closed
+0: Tunnel closed
+97: Tunnel closed
+100: Tunnel closed
+101: Tunnel closed
+102: Tunnel closed
+92: Tunnel closed
+13: Tunnel closed
+85: Tunnel closed
+78: Tunnel closed
+70: Tunnel closed
