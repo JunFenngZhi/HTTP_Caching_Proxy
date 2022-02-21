@@ -130,8 +130,7 @@ void * proxy::handleRequest(void * info) {
     }
   }
   else if (p.method == "POST") {
-    //cout<<"post报文如下:\n";
-    //cout<<p.request<<endl;
+    logger::displayRequest(client_info, p.requestline, p.host);
     try {
       handle_POST(server_fd, client_info, request, p);
     }
@@ -204,6 +203,9 @@ void proxy::handle_GET(clientInfo * client_info,
   if (my_cache.findInCache(URI, target) == true) {  // find resource in cache
     // resource need to revalidate
     if (target.mustRevalidate == true) {
+      //write into logfile to show request need to validation
+      logger::printRequireValidation(client_info);
+
       // revalidate the cached response to check its validity
       if (revalidateCache(target, server_fd, request_p, client_info) == true) {
         useCachedResponse(client_info, target.response);
@@ -216,16 +218,22 @@ void proxy::handle_GET(clientInfo * client_info,
       }
     }
 
-    // if targe is expired, erase it from the cache. Then Re-request response from the server
+    // if target is expired, erase it from the cache. Then Re-request response from the server
     if (target.isExpired(time(0)) == true) {
+      //write into logfile to show request is expired
+      logger::printExpiredCache(client_info, target);
       my_cache.deleteResponse(URI);
       getResponseFromServer(server_fd, request_p, client_info);
     }
     else {  // no expired, use the cache
+      //write into logfile to show cache is valid
+      logger::printCacheValid(client_info);
       useCachedResponse(client_info, target.response);
     }
   }
   else {  // resource is not found in cache
+    //write into logfile to show that the request is not in cache.
+    logger::printNotInCache(client_info);
     getResponseFromServer(server_fd, request_p, client_info);
   }
 }
@@ -266,6 +274,9 @@ void proxy::getResponseFromServer(int server_fd,
 
   // chunked mode. proxy recv packets from server and then directly forward to the client. do not cache
   if (response_p.chunked == true) {
+    //write into logfile to indicate this response can not cache because chunked
+    logger::printNotCacheableChunked(client_info);
+
     // send the first packet
     if (send(client_info->client_fd, firstResponse.c_str(), firstResponse.length(), 0) <
         0) {
@@ -293,6 +304,20 @@ void proxy::getResponseFromServer(int server_fd,
       throw MyException("fail to send whole GET response to client.\n");
     }
 
+    //according to the response, write into different logfile
+    //need to revalidate
+    if (response_p.revalidate == true) {
+      logger::printNoteCacheControl(client_info, response_p);
+      logger::printNoteETag(client_info, response_p);
+      logger::printCachedNeedRevalidate(client_info);
+    }
+    //need to show expires time
+    else {
+      //if Expires filed exist
+      if (response_p.list["Expires"] != "") {
+        logger::printCachedExpires(client_info, response_p);
+      }
+    }
     // try to cache the response
     my_cache.insertCache(request_p.URI, wholeMessage, response_p);
   }
@@ -363,6 +388,10 @@ void proxy::handle_POST(int server_fd,
   if (len < 0) {
     throw MyException("Fail to receive POST's reponse from serever.\n");
   }
+  string firstResponse(buffer.data(), len);
+  parserResponse response_p;
+  response_p.parse(firstResponse);
+
   if (send(client_info->client_fd, buffer.data(), len, 0) < 0) {
     throw MyException("fail to send POST message's response to client.\n");
   }
@@ -421,11 +450,10 @@ bool proxy::revalidateCache(const cachedResponse & target,
   return false;
 }
 
-
 /*
   clean the Cache, delete expired cached responsed
 */
-void* proxy::cleanCache(void* ptr){
+void * proxy::cleanCache(void * ptr) {
   my_cache.cleanCache();
   return nullptr;
 }
