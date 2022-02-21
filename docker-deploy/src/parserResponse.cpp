@@ -129,3 +129,9 @@ void parserResponse::parseLastModified() {
   this->LastModified = list["Last-Modified"];
   //if does not exist, LastModified = ""
 }
+
+void parserResponse::checkResponseFormat() {
+  if (response.find("\r\n\r\n") == string::npos) {
+    throw MyException("Wrong response format. HTTP/1.1 502 Bad Gateway\n");
+  }
+}

@@ -31,6 +31,7 @@ class parserResponse {
 
   void parse(const string & response) {
     this->response = response;
+    checkResponseFormat();
     parseStatusLine();
     parseHead_Length();
     parseContent_Length();
@@ -72,6 +73,8 @@ class parserResponse {
   void parseLastModified();
 
   void parseEtag();
+
+  void checkResponseFormat();
 
   inline void printResult() {
     cout << "----------------------------------------------------------" << endl;

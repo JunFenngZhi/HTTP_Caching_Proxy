@@ -1,0 +1,12 @@
+1. HTTP protocol exception:
+a. Bad Request: 
+If our proxy receives a request from the client which does not contain the protocol “HTTP/1.1”, 
+we would throw exception to indicate that situation
+
+b. 502 Bad Gateway: If our proxy receives an invalid response(like invalid format) from an origin server, 
+we would throw exception to indicate that situation
+
+2. Delete Danger
+When we write proxy run function, we create main thread, firstly we delete that main thread, and found that 
+proxy can not connect correctly, and then we did not write delete, and then the bug is fixed, so we knew that
+Main thread delete will crash other threads

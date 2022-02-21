@@ -9,6 +9,10 @@ void parserRequest::checkRequestFormat() {
   if (request == "" || request == "\r" || request == "\n" || request == "\r\n") {
     throw MyException("Wrong request format. request is empty\n");
   }
+  //add one more case: HTTP/1.1 omit
+  if (request.find("HTTP/1.1") == string::npos) {
+    throw MyException("Wrong request format. omit the HTTP/1.1\n");
+  }
 }
 
 /*

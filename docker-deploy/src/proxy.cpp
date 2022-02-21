@@ -107,7 +107,7 @@ void * proxy::handleRequest(void * info) {
   if (p.method == "CONNECT") {
     logger::displayRequest(client_info, p.requestline, p.host);
     try {
-      handle_CONNECT(client_info->client_fd, server_fd);
+      handle_CONNECT(client_info, client_info->client_fd, server_fd);
     }
     catch (const std::exception & e) {
       std::cerr << client_info->Id << ":" << e.what() << '\n';
@@ -140,8 +140,6 @@ void * proxy::handleRequest(void * info) {
       resourceClean(server_fd, client_info);
       return nullptr;
     }
-
-    logger::displayRequest(client_info, p.requestline, p.host);
   }
 
   resourceClean(server_fd, client_info);
@@ -153,9 +151,10 @@ void * proxy::handleRequest(void * info) {
   handle CONNECT for client. build a transparent tunnel between server and client.
   Receive data and then forward it directly to the other side withour reformating. 
 */
-void proxy::handle_CONNECT(int client_fd, int server_fd) {
+void proxy::handle_CONNECT(clientInfo * client_info, int client_fd, int server_fd) {
   send(client_fd, "HTTP/1.1 200 OK\r\n\r\n", 19, 0);  //connect successfully, response
-
+  //write into logfile
+  logger::printResponding(client_info, "HTTP/1.1 200 OK");
   //listen to two sides, diretly foward the message
   fd_set read_fds;
   vector<int> all_fds = {client_fd, server_fd};
@@ -267,7 +266,14 @@ void proxy::getResponseFromServer(int server_fd,
   // parse response
   string firstResponse(buffer.data(), len);
   parserResponse response_p;
-  response_p.parse(firstResponse);
+
+  //add try catch to indicate 502 BadGate way
+  try {
+    response_p.parse(firstResponse);
+  }
+  catch (const std::exception & e) {
+    logger::PrintException(client_info->Id, e.what());
+  }
 
   //write info into logfile
   logger::printReceievedResponse(client_info, response_p.status_line, request_p.host);
@@ -308,7 +314,9 @@ void proxy::getResponseFromServer(int server_fd,
     //need to revalidate
     if (response_p.revalidate == true) {
       logger::printNoteCacheControl(client_info, response_p);
-      logger::printNoteETag(client_info, response_p);
+      if (response_p.list["Etag"] != "") {
+        logger::printNoteETag(client_info, response_p);
+      }
       logger::printCachedNeedRevalidate(client_info);
     }
     //need to show expires time
@@ -390,7 +398,14 @@ void proxy::handle_POST(int server_fd,
   }
   string firstResponse(buffer.data(), len);
   parserResponse response_p;
-  response_p.parse(firstResponse);
+  //add try catch to indicate the 502 Bad Gateway
+  try {
+    response_p.parse(firstResponse);
+    logger::printResponding(client_info, response_p.status_line);
+  }
+  catch (const std::exception & e) {
+    logger::PrintException(client_info->Id, e.what());
+  }
 
   if (send(client_info->client_fd, buffer.data(), len, 0) < 0) {
     throw MyException("fail to send POST message's response to client.\n");

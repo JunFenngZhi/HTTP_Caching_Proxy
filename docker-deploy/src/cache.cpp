@@ -16,7 +16,9 @@ void cache::insertCache(const string & key,
                      response_p.E_tag,
                      response_p.LastModified,
                      response_p.revalidate);
-    pthread_rwlock_rdlock(&rwlock);
+
+    //change from rdlock to wrlock
+    pthread_rwlock_wrlock(&rwlock);
     list[key] = c;
     pthread_rwlock_unlock(&rwlock);
   }
@@ -29,10 +31,10 @@ void cache::insertCache(const string & key,
 bool cache::findInCache(const string & key, cachedResponse & target) {
   pthread_rwlock_rdlock(&rwlock);
   if (list.find(key) == list.end()) {  // not find
-      pthread_rwlock_unlock(&rwlock);
-      return false;
+    pthread_rwlock_unlock(&rwlock);
+    return false;
   }
-  target = list[key];   // 这里会触发赋值运算符，可能使用指针返回地址更好。
+  target = list[key];  // 这里会触发赋值运算符，可能使用指针返回地址更好。
   pthread_rwlock_unlock(&rwlock);
   return true;
 }
@@ -41,22 +43,21 @@ bool cache::findInCache(const string & key, cachedResponse & target) {
     clean the expired cachedResponse.
 */
 void cache::cleanCache() {
-    pthread_rwlock_wrlock(&rwlock);
-    for(auto it=list.begin();it!=list.end();){
-        if(it->second.isExpired(time(0)) == true)
-            it = list.erase(it);
-        else
-            ++it;
-    }
-    pthread_rwlock_unlock(&rwlock);
+  pthread_rwlock_wrlock(&rwlock);
+  for (auto it = list.begin(); it != list.end();) {
+    if (it->second.isExpired(time(0)) == true)
+      it = list.erase(it);
+    else
+      ++it;
+  }
+  pthread_rwlock_unlock(&rwlock);
 }
 
 /*
     delete specific reponse in cache based on key.
 */
 void cache::deleteResponse(const string & key) {
-    pthread_rwlock_wrlock(&rwlock);
-    list.erase(key);
-    pthread_rwlock_unlock(&rwlock);
-
+  pthread_rwlock_wrlock(&rwlock);
+  list.erase(key);
+  pthread_rwlock_unlock(&rwlock);
 }

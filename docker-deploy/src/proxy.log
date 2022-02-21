@@ -1,17 +1,89 @@
-0: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -04:12:37 2022
-1: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -04:12:37 2022
-2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -04:12:37 2022
-0: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+0: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:27:50 2022
+0: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+0: Responding "HTTP/1.1 200 OK"
+1: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:27:50 2022
+2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:27:50 2022
+1: Requesting "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from contile-images.services.mozilla.com
+1: Responding "HTTP/1.1 200 OK"
 2: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
-1: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
-3: "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -04:12:40 2022
-3: Requesting "GET http://c.cnzz.com/core.php?web_id=5791829&show=pic&t=z HTTP/1.1" from c.cnzz.com
+2: Responding "HTTP/1.1 200 OK"
+3: "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=321595677 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:27:54 2022
+3: Requesting "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=321595677 HTTP/1.1" from cnzz.mmstat.com
 3: not in cache
-3: Received "HTTP/1.1 200 OK" from c.cnzz.com
-3: not cacheable because chunked
-4: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=en-us&ntime=1645402361&cnzz_eid=1817421425-1645402361-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1440x900&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f19c53446d7-01dbc1ef125b04-455a69-13c680-17f19c53447267&h=1&rnd=1012693997 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -04:12:42 2022
-4: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=en-us&ntime=1645402361&cnzz_eid=1817421425-1645402361-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1440x900&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f19c53446d7-01dbc1ef125b04-455a69-13c680-17f19c53447267&h=1&rnd=1012693997 HTTP/1.1" from z7.cnzz.com
+3: Received "HTTP/1.1 302 Found" from cnzz.mmstat.com
+3: NOTE Cache-Control "no-cache"
+3: cached, but requires re-validation
+5: "GET http://pcookie.cnzz.com/app.gif?&cna=pvOZGvluswoCAZgDTQittggy HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:27:54 2022
+4: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=en-us&ntime=1645413197&cnzz_eid=974887358-1645413197-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1440x900&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f1a4e0f702ac-0835c01ea22d4b8-455a69-13c680-17f1a4e0f7141e&h=1&rnd=1192612971 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:27:54 2022
+5: Requesting "GET http://pcookie.cnzz.com/app.gif?&cna=pvOZGvluswoCAZgDTQittggy HTTP/1.1" from pcookie.cnzz.com
+5: not in cache
+5: Received "HTTP/1.1 200 OK" from pcookie.cnzz.com
+5: NOTE Cache-Control "no-cache"
+5: cached, but requires re-validation
+4: Requesting "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=en-us&ntime=1645413197&cnzz_eid=974887358-1645413197-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1440x900&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4&umuuid=17f1a4e0f702ac-0835c01ea22d4b8-455a69-13c680-17f1a4e0f7141e&h=1&rnd=1192612971 HTTP/1.1" from z7.cnzz.com
 4: not in cache
 4: Received "HTTP/1.1 200 OK" from z7.cnzz.com
 4: not cacheable because chunked
-5: Invalid request. recv return negative or zero.
+6: Invalid request. recv return negative or zero.
+7: "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=533127837 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:28:56 2022
+7: Requesting "GET http://cnzz.mmstat.com/9.gif?abc=1&rnd=533127837 HTTP/1.1" from cnzz.mmstat.com
+7: not in cache
+7: Received "HTTP/1.1 302 Found" from cnzz.mmstat.com
+7: NOTE Cache-Control "no-cache"
+7: cached, but requires re-validation
+8: "GET http://pcookie.cnzz.com/app.gif?&cna=pvOZGvluswoCAZgDTQittggy HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:28:56 2022
+10: "GET http://z7.cnzz.com/stat.htm?id=5791829&r=http%3A%2F%2Fwww.cad.zju.edu.cn%2Findex.html&lg=en-us&ntime=1645413197&cnzz_eid=974887358-1645413197-http%3A%2F%2Fwww.cad.zju.edu.cn%2F&showp=1440x900&p=http%3A%2F%2Fwww.cad.zju.edu.cn%2Fzhongwen.html&t=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%85%E5%8A%A9%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9B%BD%E5%AE%B6%E9%87%8D0: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:39:17 2022
+0: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+0: Responding "HTTP/1.1 200 OK"
+0: Tunnel closed
+1: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:40:52 2022
+1: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+1: Responding "HTTP/1.1 200 OK"
+1: Tunnel closed
+2: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:46:51 2022
+2: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+2: Responding "HTTP/1.1 200 OK"
+2: Tunnel closed
+3: "CONNECT spocs.getpocket.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:50:52 2022
+4: "CONNECT getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -02:50:52 2022
+3: Requesting "CONNECT spocs.getpocket.com:443 HTTP/1.1" from spocs.getpocket.com
+3: Responding "HTTP/1.1 200 OK"
+4: Requesting "CONNECT getpocket.cdn.mozilla.net:443 HTTP/1.1" from getpocket.cdn.mozilla.net
+4: Responding "HTTP/1.1 200 OK"
+4: Tunnel closed
+3: Tunnel closed
+5: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:00:52 2022
+5: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+5: Responding "HTTP/1.1 200 OK"
+5: Tunnel closed
+6: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:09:09 2022
+6: Requesting "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from safebrowsing.googleapis.com
+6: Responding "HTTP/1.1 200 OK"
+6: Tunnel closed
+7: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:20:52 2022
+7: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+7: Responding "HTTP/1.1 200 OK"
+7: Tunnel closed
+8: "CONNECT spocs.getpocket.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:25:52 2022
+8: Requesting "CONNECT spocs.getpocket.com:443 HTTP/1.1" from spocs.getpocket.com
+8: Responding "HTTP/1.1 200 OK"
+9: Invalid request. recv return negative or zero.
+10: "CONNECT normandy.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:27:30 2022
+10: Requesting "CONNECT normandy.cdn.mozilla.net:443 HTTP/1.1" from normandy.cdn.mozilla.net
+10: Responding "HTTP/1.1 200 OK"
+11: "CONNECT classify-client.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:27:30 2022
+11: Requesting "CONNECT classify-client.services.mozilla.com:443 HTTP/1.1" from classify-client.services.mozilla.com
+11: Responding "HTTP/1.1 200 OK"
+12: "POST http://r3.o.lencr.org/ HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:27:30 2022
+12: Requesting "POST http://r3.o.lencr.org/ HTTP/1.1" from r3.o.lencr.org
+12: Responding "HTTP/1.1 200 OK"
+13: "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:27:30 2022
+13: Requesting "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1" from content-signature-2.cdn.mozilla.net
+13: Responding "HTTP/1.1 200 OK"
+8: Tunnel closed
+10: Tunnel closed
+11: Tunnel closed
+13: Tunnel closed
+14: "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from 98.24.61.124 @ Mon Feb 21 -01:35:52 2022
+14: Requesting "CONNECT contile.services.mozilla.com:443 HTTP/1.1" from contile.services.mozilla.com
+14: Responding "HTTP/1.1 200 OK"

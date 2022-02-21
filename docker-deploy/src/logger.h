@@ -15,7 +15,8 @@ class logger {
  public:
   static void InvalidRequest(const string & clientID) {
     pthread_mutex_lock(&mutex);
-    logfile << clientID << ": Invalid request. recv return negative or zero." << endl;
+    logfile << clientID << "WARNING: Invalid request. recv return negative or zero."
+            << endl;
     pthread_mutex_unlock(&mutex);
   }
   static void PrintException(int id, const string & error) {
